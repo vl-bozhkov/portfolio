@@ -1,0 +1,77 @@
+@import 'config';
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url($background-url);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  // .logo-text {
+  //   transform: translateX(5vw);
+  //   font-weight: 100;
+  //   font-size: 300%;
+  //   display: inline-block;
+  //   border: 1px solid white;
+  // }
+
+  .hero-box {
+    padding-left: 60px;
+    transform: translateY(15vh);
+
+    .icons-grid {
+      float: right;
+      i {
+        display: block;
+        margin-top: -50px;
+        margin-right: 20px;
+        font-size: 150%;
+        margin-bottom: -80px;
+      }
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      border: 1px solid $primary-color;
+      font-weight: 700;
+      font-size: 90%;
+      padding: 10px 20px;
+      letter-spacing: 3px;
+      background-color: $primary-color;
+    }
+
+    .hero-text {
+      width: 50%;
+      line-height: 145%;
+    }
+
+    .name-highlight {
+      color: $primary-color;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 290%;
+      margin-bottom: 14px;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(-10vw);
+    border: 1px solid white;
+    align-items: center;
+
+    a {
+      margin: 20px 0 0 40px;
+      color: darken(#fff, 20);
+      font-weight: 400;
+
+      i {
+        font-size: 150%;
+      }
+    }
+  }
+}
