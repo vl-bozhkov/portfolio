@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
@@ -34,16 +35,18 @@
             </a>
         </nav>
         <div class="hero-box">
-            <h1>Hi,
-                <br> I'm
-                <spna class="name-highlight">Vladi</spna>,
-                <br> Web Developer</h1>
-            <p class="hero-text">Based out of Rishon Le Zion, Israel. Specializing in Full Stack Web Development. If you are a business seeking
-                a web presence or an employer looking to hire, you can get in touch with me
-                <a href="#">here</a>.</p>
+            <div class="hero-box-container">
+                <h1>Hi,
+                    <br> I'm
+                    <spna class="name-highlight">Vladi</spna>,
+                    <br> Web Developer</h1>
+                <p id="hero-text" class="hero-text">Based out of Rishon Le Zion, Israel. Specializing in Full Stack Web Development. If you are a business seeking
+                    a web presence or an employer looking to hire, you can get in touch with me
+                    <a href="#">here</a>.</p>
 
 
-            <a href="#" class="btn">About Me</a>
+                <a href="#" class="btn">About Me</a>
+            </div>
             <div class="icons-grid">
 
                 <a href="https://github.com/vl-bozhkov" target="_blank">
@@ -62,9 +65,123 @@
                     <i class="icon ion-logo-facebook big-icon"></i>
                 </a>
 
+                <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
+                    <i class="icon ion-logo-linkedin big-icon"></i>
+                </a>
+
             </div>
         </div>
+        <div class="works-link">
+            <h6>Works</h6>
+            <a href="#">
+                <i class="icon ion-ios-arrow-round-down "></i>
+            </a>
+
+            <!-- <a class="works-link" href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
+                <i class="icon ion-logo-linkedin "></i>
+            </a> -->
+        </div>
     </header>
+
+    <section class="about">
+
+        <div class="grid-layout">
+            <div class="box">
+                <h2>About Me.</h2>
+                <p>I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making
+                    weird things with web technologies. I like to resolve design problems, create smart user interface and
+                    imagine useful interaction, developing rich web experiences & web applications. When not working or futzing
+                    around with code, I study how to escape from University. Actually for hire.</p>
+            </div>
+            <div class="box">
+                <h2>Lets Talk</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque beatae at debitis ex iusto dicta tempora
+                    qui dolor eius veritatis, maiores sed quos et! Ratione similique minima accusantium corrupti quia.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="about">
+        <div class="portdolio-image">
+            <img src="./dist/img/vladi.jpg" alt="">
+        </div>
+
+        <div class="grid-layout">
+            <div class="box">
+                <h2>About Me</h2>
+                <p class="about-text">I'm Vladimir Bozhkov, a self-taught Full Stack Web developer. I'm a guy who likes making interesting things
+                    with web technologies.</p>
+                <p class="about-text">I like to resolve design problems, create smart user interface and developing rich web experiences & web
+                    applications.I work to the principle that Simple is beautiful</p>
+                <p class="about-text">Browse some of my work, view my skills, or get in touch. You can also find me on Twitter, LinkedIn, Github,
+                    CodePen and Instagram.
+
+                </p>
+                <div class="box-icon-grid">
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                </div>
+                <div class="box-icon-grid">
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-mongodb-plain-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-github-plain-wordmark"></i>
+                </div>
+
+            </div>
+            <div class="box">
+                <h2>Lets Talk.</h2>
+                <p class="contact-text">
+                    New projects, freelance inquiry or even a coffee.
+                </p>
+                <form action="#">
+
+                    <label for="">Name</label>
+                    <input type="text">
+
+
+
+                    <label for="">Email</label>
+                    <input type="email">
+
+
+
+                    <label for="">Text</label>
+                    <textarea name="" id="" cols="20" rows="10"></textarea>
+
+
+                    <a class="btn" href="#">Submit</a>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-icons-grid">
+
+            <a href="https://github.com/vl-bozhkov" target="_blank">
+                <i class="icon ion-logo-github big-icon"></i>
+            </a>
+
+            <a href="https://codepen.io/dashboard/" target="_blank">
+                <i class="icon ion-logo-codepen big-icon"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank">
+                <i class="icon ion-logo-instagram big-icon"></i>
+            </a>
+
+            <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
+                <i class="icon ion-logo-facebook big-icon"></i>
+            </a>
+
+        </div>
+        <span class="footer-text">Coded and Designed with
+            <i class="icon ion-md-heart"></i> by Vladimir Bozhkov &copy; 2018</span>
+    </footer>
 
 </body>
 

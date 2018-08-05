@@ -18,8 +18,21 @@ html {
   color: #555;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 62.5%;
   text-rendering: optimizeLegibility;
+  //   @include respond(tab-land) {
+  //     // width < 1200?
+  //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  //   }
+
+  //   @include respond(tab-port) {
+  //     // width < 900?
+  //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  //   }
+
+  //   @include respond(big-desktop) {
+  //     font-size: 75%; //1rem = 12, 12/16
+  //   }
 }
 
 .row {
@@ -30,4 +43,24 @@ html {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin-top: 2.5rem;
+  border: 1px solid $primary-color;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  letter-spacing: 2px;
+  background-color: $primary-color;
+  transform: scale(1);
+  transition: 0.3s all;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.02);
+  background-color: darken($primary-color, 5);
 }

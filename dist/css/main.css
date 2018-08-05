@@ -8,7 +8,7 @@ html {
   color: #555;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 62.5%;
   text-rendering: optimizeLegibility; }
 
 .row {
@@ -19,50 +19,235 @@ a {
   text-decoration: none;
   color: #fff; }
 
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin-top: 2.5rem;
+  border: 1px solid #f1c40f;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  letter-spacing: 2px;
+  background-color: #f1c40f;
+  transform: scale(1);
+  transition: 0.3s all; }
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.02);
+  background-color: #dab10d; }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/background.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
-  color: #fff; }
-  header .hero-box {
-    padding-left: 60px;
-    transform: translateY(15vh); }
-    header .hero-box .icons-grid {
-      float: right; }
-      header .hero-box .icons-grid i {
-        display: block;
-        margin-top: -50px;
-        margin-right: 20px;
-        font-size: 150%;
-        margin-bottom: -80px; }
-    header .hero-box .btn {
-      display: inline-block;
-      margin-top: 25px;
-      border: 1px solid #f1c40f;
-      font-weight: 700;
-      font-size: 90%;
-      padding: 10px 20px;
-      letter-spacing: 3px;
-      background-color: #f1c40f; }
-    header .hero-box .hero-text {
-      width: 50%;
-      line-height: 145%; }
-    header .hero-box .name-highlight {
-      color: #f1c40f; }
-    header .hero-box h1 {
-      margin: 0;
-      font-size: 290%;
-      margin-bottom: 14px; }
+  color: #fff;
+  position: relative;
+  overflow: hidden; }
+  header .hero-box-container {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%); }
+  header .hero-box .icons-grid {
+    position: absolute;
+    right: 0;
+    top: 30%; }
+    header .hero-box .icons-grid a:link,
+    header .hero-box .icons-grid a:visited {
+      display: block;
+      margin-right: 2rem;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: #cccccc;
+      transition: 0.3s color; }
+    header .hero-box .icons-grid a:hover,
+    header .hero-box .icons-grid a:active {
+      color: #fff; }
+  header .hero-box .btn:link,
+  header .hero-box .btn:visited {
+    display: inline-block;
+    margin-top: 2.5rem;
+    border: 1px solid #f1c40f;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    letter-spacing: 2px;
+    background-color: #f1c40f;
+    transform: scale(1);
+    transition: 0.3s all; }
+  header .hero-box .btn:hover,
+  header .hero-box .btn:active {
+    transform: scale(1.02);
+    background-color: #dab10d; }
+  header .hero-box .hero-text {
+    width: 80%;
+    line-height: 145%;
+    font-size: 1.7rem;
+    word-spacing: 1px;
+    letter-spacing: 1px; }
+    header .hero-box .hero-text a:link,
+    header .hero-box .hero-text a:visited {
+      color: #f1c40f;
+      transition: 0.3s color; }
+    header .hero-box .hero-text a:hover,
+    header .hero-box .hero-text a:active {
+      color: #cccccc; }
+  header .hero-box .name-highlight {
+    color: #f1c40f; }
+  header .hero-box h1 {
+    margin: 0;
+    font-size: 5rem;
+    margin-bottom: 1.4rem;
+    line-height: 135%; }
   header nav {
     display: flex;
     justify-content: flex-end;
-    transform: translateX(-10vw);
-    border: 1px solid white;
-    align-items: center; }
-    header nav a {
-      margin: 20px 0 0 40px;
+    margin-right: 13rem;
+    align-items: center;
+    font-size: 1.8rem; }
+    header nav .nav-link:link, header nav .nav-link:visited {
+      margin: 2rem 0 0 4rem;
       color: #cccccc;
-      font-weight: 400; }
-      header nav a i {
-        font-size: 150%; }
+      font-weight: 400;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s all; }
+    header nav .nav-link:hover, header nav .nav-link:active {
+      border-bottom: 2px solid #f1c40f;
+      color: #fff; }
+    header nav .nav-link i {
+      font-size: 1.7rem; }
+  header .works-link {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #cccccc; }
+    header .works-link h6 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      font-weight: 100;
+      letter-spacing: 0.2rem; }
+      header .works-link h6:hover {
+        cursor: pointer; }
+    header .works-link a {
+      display: flex;
+      justify-content: center; }
+      header .works-link a i {
+        font-size: 5rem; }
+      header .works-link a:link, header .works-link a:visited {
+        color: #cccccc; }
+      header .works-link a:hover, header .works-link a:active {
+        color: #fff; }
+
+.about {
+  padding-top: 6rem; }
+  .about .portdolio-image img {
+    border-radius: 50%;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(7rem); }
+  .about .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5rem; }
+    .about .grid-layout .box {
+      border: 1px solid red;
+      padding: 8rem 8rem; }
+      .about .grid-layout .box .box-icon-grid {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .about .grid-layout .box .box-icon-grid i {
+          display: inline-block;
+          font-size: 6rem;
+          margin-right: 3rem;
+          margin-bottom: 1rem; }
+          .about .grid-layout .box .box-icon-grid i:hover {
+            cursor: pointer; }
+      .about .grid-layout .box:nth-child(1) {
+        background: #ecf0f1; }
+      .about .grid-layout .box:nth-child(2) {
+        background: #2d3436;
+        color: #fff; }
+      .about .grid-layout .box .contact-text {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        font-weight: 100;
+        letter-spacing: 1px; }
+      .about .grid-layout .box h2 {
+        font-size: 2rem; }
+      .about .grid-layout .box .about-text {
+        line-height: 145%;
+        font-size: 1.7rem;
+        margin-top: 1rem; }
+      .about .grid-layout .box form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem; }
+        .about .grid-layout .box form label {
+          margin: 0.5rem 0 0 0.7rem;
+          font-size: 1.4rem; }
+        .about .grid-layout .box form input,
+        .about .grid-layout .box form textarea {
+          font-size: 1.4rem;
+          font-weight: 100;
+          letter-spacing: 1px;
+          margin: 1rem 1rem;
+          background-color: #2d3436;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          color: #cccccc;
+          transition: 0.5s border-bottom; }
+          .about .grid-layout .box form input:focus,
+          .about .grid-layout .box form textarea:focus {
+            border-bottom: 1px solid #f1c40f; }
+        .about .grid-layout .box form input {
+          height: 3rem; }
+        .about .grid-layout .box form .btn {
+          width: 30%;
+          margin-left: 0.7rem; }
+
+footer {
+  background-color: #1c1c25;
+  padding: 10rem 0; }
+  footer .footer-text {
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    color: #fff; }
+    footer .footer-text i {
+      color: #d63031;
+      font-size: 3rem; }
+  footer .footer-icons-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    footer .footer-icons-grid i {
+      font-size: 3rem;
+      margin: 0 3rem; }
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+/* Small tablet to big tablet: from 768px to 1023px */
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 59%; }
+  header .works-link {
+    display: none; }
+  header nav {
+    visibility: hidden; }
+  header .hero-box {
+    padding: 0 10%; }
+    header .hero-box .hero-text {
+      display: none; }
+    header .hero-box .icons-grid {
+      display: none; } }
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 53.25%; } }
