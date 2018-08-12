@@ -142,6 +142,9 @@ header {
     position: absolute;
     right: 0;
     top: 30%; }
+    @media only screen and (max-width: 850px) {
+      header .hero-box .icons-grid {
+        display: none; } }
     header .hero-box .icons-grid a:link,
     header .hero-box .icons-grid a:visited {
       display: block;
@@ -411,6 +414,9 @@ footer {
         position: absolute;
         right: -15%;
         top: 40%; }
+        @media only screen and (max-width: 850px) {
+          .projects .container-projects .project-image .iphone {
+            display: none; } }
 
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
 /* Small tablet to big tablet: from 768px to 1023px */

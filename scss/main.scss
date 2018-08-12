@@ -42,6 +42,9 @@ header {
       // z-index: 9999;
       right: 0;
       top: 30%;
+      @media only screen and (max-width: 850px) {
+        display: none;
+      }
       a:link,
       a:visited {
         display: block;
@@ -440,6 +443,9 @@ footer {
         position: absolute;
         right: -15%;
         top: 40%;
+        @media only screen and (max-width: 850px) {
+          display: none;
+        }
       }
     }
   }
