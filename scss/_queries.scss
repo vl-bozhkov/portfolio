@@ -14,26 +14,133 @@
   html {
     font-size: 59%;
   }
+
+  // .icons-grid {
+  // display: flex;
+  // border: 1px solid red;
+  // align-items: center;
+  // justify-content: center;
+  // height: 100%;
+  // width: 100%;
+
+  // z-index: 99999999999;
+  // }
+
+  // .icons-grid {
+  //   height: 70vh;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: flex-end;
+  //   border: 1px solid red;
+  //   z-index: 999999;
+  //   position: fixed;
+  // }
+
+  // .icons-grid {
+  //   &.icons-menu-overlay {
+  //   position: static;
+  //   display: flex;
+  //   height: 90vh;
+  //   align-items: flex-end;
+  //   justify-content: center;
+  //   z-index: 5500;
+
+  //   border: 1px solid red;
+  //   a {
+  //     i {
+  //       display: inline;
+  //       color: #fff;
+  //       display: inline-block;
+  //     }
+  //   }
+  //   }
+  // }
+
+  .about {
+    .grid-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projects {
+    // div:nth-of-type(1) {
+    //   order: 1;
+    // }
+    .project-description {
+      order: 1;
+    }
+    .container-projects {
+      grid-template-columns: 1fr;
+    }
+  }
   header {
     .works-link {
       display: none;
     }
-    nav {
-      visibility: hidden;
+
+    .mobile-nav-icon {
+      visibility: visible;
     }
 
+    nav {
+      display: none;
+      // transform: translate3d(0, -100%, 0);
+    }
+    // nav {
+    //   flex-direction: column;
+    //   align-items: center;
+    //   margin: 40rem 0;
+    //   height: 100vh;
+    //   width: 100vw;
+    //   opacity: 1;
+    //   border: 1px solid red;
+    //   z-index: 3;
+    //   background-color: #1c1c25;
+    //   color: #fff;
+    //   justify-content: center;
+    //   // transform: translateX(-10vw);
+    //   margin: 0;
+    //   position: fixed;
+    //   font-size: 2.8rem;
+    // }
+
     .hero-box {
+      // visibility: hidden;
+      // opacity: 0;
       // display: flex;
       // flex-direction: column;
       padding: 0 10%;
       .hero-text {
         display: none;
       }
-      // transform: translateY(25%);
 
-      .icons-grid {
-        display: none;
-      }
+      // .icons-grid-overlay {
+      //   position: fixed;
+      //   z-index: 9999;
+      //   right: 50%;
+      //   top: 90%;
+      //   border: 1px solid red;
+      //   left: 12%;
+      //   width: 60%;
+      //   margin: 0 auto;
+      //   a:link,
+      //   a:visited {
+      //     display: inline;
+      //     // margin-top: -5rem;
+      //     margin: 2rem;
+      //     font-size: 3rem;
+      //     margin-bottom: 1.5rem;
+      //     color: darken(#fff, 20);
+      //     transition: 0.3s color;
+      //   }
+
+      //   a:hover,
+      //   a:active {
+      //     color: #fff;
+      //   }
+      // }
+      // transform: translateY(25%);
     }
 
     // .hero-box {

@@ -1,9 +1,11 @@
 @import 'config';
+@import 'menu';
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url($background-url);
   height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -37,6 +39,7 @@ header {
 
     .icons-grid {
       position: absolute;
+      // z-index: 9999;
       right: 0;
       top: 30%;
       a:link,
@@ -74,7 +77,21 @@ header {
       transform: scale(1.02);
       background-color: darken($primary-color, 5);
     }
+    .btn-ghost:link,
+    .btn-ghost:visited {
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-left: 1rem;
+      color: $primary-color;
+      transition: 0.3s all;
+      border: 1px solid #fff;
+    }
 
+    .btn-ghost:hover,
+    .btn-ghost:active {
+      color: #fff;
+      border: 1px solid $primary-color;
+    }
     .hero-text {
       width: 80%;
       line-height: 145%;
@@ -113,12 +130,14 @@ header {
     margin-right: 13rem;
     align-items: center;
     font-size: 1.8rem;
+    visibility: hidden;
 
     .nav-link {
       &:link,
       &:visited {
         margin: 2rem 0 0 4rem;
-        color: darken(#fff, 20);
+        // color: darken(#fff, 20);
+        color: transparent;
         font-weight: 400;
         border-bottom: 2px solid transparent;
         transition: 0.3s all;
@@ -171,7 +190,8 @@ header {
 }
 
 .about {
-  padding-top: 6rem;
+  // padding-top: 1rem;
+  // padding-bottom: 0.5rem;
 
   .portdolio-image {
     img {
@@ -180,6 +200,9 @@ header {
       display: block;
       margin: 0 auto;
       transform: translateY(7rem);
+      @media only screen and (max-width: 1050px) {
+        transform: translateY(3rem);
+      }
     }
   }
 
@@ -187,36 +210,76 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 5rem;
+    @media only screen and (max-width: 1050px) {
+      margin: 1%;
+    }
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.75);
 
     .box {
-      border: 1px solid red;
+      // border: 1px solid red;
       padding: 8rem 8rem;
-
+      @media only screen and (max-width: 1050px) {
+        padding: 2rem 2rem;
+      }
       .box-icon-grid {
         margin-top: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
         i {
           display: inline-block;
           font-size: 6rem;
           margin-right: 3rem;
           margin-bottom: 1rem;
+
+          transition: color 0.3s;
           &:hover {
             cursor: pointer;
           }
         }
+
+        .devicon-react-original-wordmark:hover {
+          color: #00d8ff;
+        }
+
+        .devicon-html5-plain-wordmark:hover {
+          color: #e34f26;
+        }
+
+        .devicon-css3-plain-wordmark:hover {
+          color: #258ec9;
+        }
+
+        .devicon-bootstrap-plain-wordmark:hover {
+          color: #5d317d;
+        }
+
+        .devicon-nodejs-plain-wordmark:hover {
+          color: #44883e;
+        }
+        .devicon-mongodb-plain-wordmark:hover {
+          color: #589636;
+        }
+
+        .devicon-git-plain-wordmark:hover {
+          color: #ff2300;
+        }
+
+        .devicon-github-plain-wordmark:hover {
+          color: #333;
+        }
       }
 
       &:nth-child(1) {
-        background: #ecf0f1;
+        background-color: #ecf0f1;
+        // background-color: $primary-color-5;
       }
 
       &:nth-child(2) {
-        background: #2d3436;
-        // background: #141414;
-        color: #fff;
+        // background: #2d3436;
+        // color: #fff;
+        background: #ecf0f1;
+        color: #000;
       }
 
       .contact-text {
@@ -248,14 +311,17 @@ header {
         textarea {
           // margin-bottom: 0.5rem;
           font-size: 1.4rem;
-          font-weight: 100;
+          font-weight: 300;
           letter-spacing: 1px;
           margin: 1rem 1rem;
-          background-color: #2d3436;
+          // background-color: #2d3436;
+          background-color: #ecf0f1;
           border: none;
-          border-bottom: 1px solid #fff;
+          // border-bottom: 1px solid #fff;
+          border-bottom: 1px solid #000;
           outline: none;
-          color: darken(#fff, 20);
+          // color: darken(#fff, 20);
+          color: #000;
           transition: 0.5s border-bottom;
           // width: 100%
           &:focus {
@@ -268,7 +334,6 @@ header {
         }
 
         .btn {
-          width: 30%;
           margin-left: 0.7rem;
         }
       }
@@ -278,6 +343,8 @@ header {
 
 footer {
   background-color: #1c1c25;
+  // background-color: #2d3436;
+  // background-color: #1e2223;
   padding: 10rem 0;
 
   .footer-text {
@@ -299,6 +366,81 @@ footer {
     i {
       font-size: 3rem;
       margin: 0 3rem;
+    }
+  }
+}
+
+.projects {
+  padding-top: 4rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  .container-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10rem;
+    @media only screen and (max-width: 850px) {
+      padding: 0;
+    }
+    .project-description {
+      // border: 1px solid red;
+      // text-align: center;
+      padding-top: 15rem;
+      padding-left: 8rem;
+      @media only screen and (max-width: 1200px) {
+        padding-top: 10rem;
+        padding-left: 6rem;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        padding-top: 6rem;
+        padding-left: 4rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        padding-top: 2rem;
+        padding: 3%;
+      }
+
+      .description-text {
+        margin-bottom: 3rem;
+      }
+      p {
+        width: 70%;
+        @media only screen and (max-width: 800px) {
+          width: 90%;
+        }
+        font-size: 1.5rem;
+        line-height: 145%;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+    }
+    .project-image {
+      position: relative;
+      // border: 1px solid green;
+      img {
+        width: 100%;
+        @media only screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+
+      .iphone {
+        width: 40%;
+        position: absolute;
+        right: -15%;
+        top: 40%;
+      }
     }
   }
 }

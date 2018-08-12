@@ -12,27 +12,34 @@
     <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <!-- <p class="logo-text">VL</p> -->
+        <a class="mobile-nav-icon js--nav-icon" href="#">
+            <i class="icon ion-md-menu"></i>
+        </a>
         <nav>
 
-            <a href="#" class="nav-link">
+            <a href="#project" class="nav-link">
                 Bio
             </a>
-            <a href="#" class="nav-link">
-                Works
+            <a href="#about" class="nav-link">
+                About
             </a>
 
-            <a href="#" class="nav-link">
+            <a href="#contact" class="nav-link">
                 Contact
             </a>
 
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link js--btn-color">
                 <i class="icon ion-ios-color-palette"></i>
             </a>
+
+
         </nav>
         <div class="hero-box">
             <div class="hero-box-container">
@@ -40,14 +47,15 @@
                     <br> I'm
                     <spna class="name-highlight">Vladi</spna>,
                     <br> Web Developer</h1>
-                <p id="hero-text" class="hero-text">Based out of Rishon Le Zion, Israel. Specializing in Full Stack Web Development. If you are a business seeking
-                    a web presence or an employer looking to hire, you can get in touch with me
+                <p id="hero-text" class="hero-text">Based out of Tel Aviv, Israel. Specializing in Full Stack Web Development. If you are an employer looking
+                    to hire, you can get in touch with me
                     <a href="#">here</a>.</p>
 
 
                 <a href="#" class="btn">About Me</a>
+                <a href="#" class="btn-ghost">Hire Me</a>
             </div>
-            <div class="icons-grid">
+            <div class="icons-grid ">
 
                 <a href="https://github.com/vl-bozhkov" target="_blank">
                     <i class="icon ion-logo-github big-icon"></i>
@@ -83,26 +91,76 @@
         </div>
     </header>
 
-    <section class="about">
-
-        <div class="grid-layout">
-            <div class="box">
-                <h2>About Me.</h2>
-                <p>I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making
-                    weird things with web technologies. I like to resolve design problems, create smart user interface and
-                    imagine useful interaction, developing rich web experiences & web applications. When not working or futzing
-                    around with code, I study how to escape from University. Actually for hire.</p>
+    <section class="projects" id="project">
+        <h2>FEATURED
+            <span class="text-highlight">WORKS</span>
+        </h2>
+        <div class="container-projects">
+            <div class="project-description">
+                <h3>Corpuslabs Solutions pvt ltd</h3>
+                <p class="description-text text-highlight">UX/UI DESIGN, RESPONSIVE WEBSITE, PRODUCT PORTFOLIO, SEO, MATERIAL DESIGN
+                </p>
+                <p>Corpuslabs is an ERP platform company offering state of the art retail, wholesale, manufacturing and mall
+                    management solutions.</p>
+                <a href="" class="btn-ghost">visit website</a>
             </div>
-            <div class="box">
-                <h2>Lets Talk</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque beatae at debitis ex iusto dicta tempora
-                    qui dolor eius veritatis, maiores sed quos et! Ratione similique minima accusantium corrupti quia.</p>
+            <div class="project-image">
+                <img class="macbook" src="./dist/img/project1_macbookpro15_front 2.png" alt="">
+                <img class="iphone" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="">
+            </div>
+        </div>
+
+        <div class="container-projects">
+            <div class="project-image">
+                <img class="macbook" src="./dist/img/project1_macbookpro15_front 2.png" alt="">
+                <img class="iphone" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="">
+            </div>
+            <div class="project-description">
+                <h3>Corpuslabs Solutions pvt ltd</h3>
+                <p class="description-text text-highlight">UX/UI DESIGN, RESPONSIVE WEBSITE, PRODUCT PORTFOLIO, SEO, MATERIAL DESIGN
+                </p>
+                <p>Corpuslabs is an ERP platform company offering state of the art retail, wholesale, manufacturing and mall
+                    management solutions.</p>
+                <a href="" class="btn-ghost">visit website</a>
             </div>
 
         </div>
+
+        <div class="container-projects">
+            <div class="project-description">
+                <h3>Corpuslabs Solutions pvt ltd</h3>
+                <p class="description-text text-highlight">UX/UI DESIGN, RESPONSIVE WEBSITE, PRODUCT PORTFOLIO, SEO, MATERIAL DESIGN
+                </p>
+                <p>Corpuslabs is an ERP platform company offering state of the art retail, wholesale, manufacturing and mall
+                    management solutions.</p>
+                <a href="" class="btn-ghost">visit website</a>
+            </div>
+            <div class="project-image">
+                <img class="macbook" src="./dist/img/project1_macbookpro15_front 2.png" alt="">
+                <img class="iphone" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="">
+            </div>
+        </div>
+
+        <div class="container-projects">
+            <div class="project-image">
+                <img class="macbook" src="./dist/img/project1_macbookpro15_front 2.png" alt="">
+                <img class="iphone" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="">
+            </div>
+            <div class="project-description">
+                <h3>Corpuslabs Solutions pvt ltd</h3>
+                <p class="description-text text-highlight">UX/UI DESIGN, RESPONSIVE WEBSITE, PRODUCT PORTFOLIO, SEO, MATERIAL DESIGN
+                </p>
+                <p>Corpuslabs is an ERP platform company offering state of the art retail, wholesale, manufacturing and mall
+                    management solutions.</p>
+                <a href="" class="btn-ghost">visit website</a>
+            </div>
+
+        </div>
+
+
     </section>
-    <section class="about">
-        <div class="portdolio-image">
+    <section class="about" id="about-contact">
+        <div class="portdolio-image" id="about">
             <img src="./dist/img/vladi.jpg" alt="">
         </div>
 
@@ -131,7 +189,7 @@
                 </div>
 
             </div>
-            <div class="box">
+            <div class="box" id="contact">
                 <h2>Lets Talk.</h2>
                 <p class="contact-text">
                     New projects, freelance inquiry or even a coffee.
@@ -152,7 +210,7 @@
                     <textarea name="" id="" cols="20" rows="10"></textarea>
 
 
-                    <a class="btn" href="#">Submit</a>
+                    <a class="btn" href="#">Send Message</a>
                 </form>
             </div>
 
@@ -182,6 +240,10 @@
         <span class="footer-text">Coded and Designed with
             <i class="icon ion-md-heart"></i> by Vladimir Bozhkov &copy; 2018</span>
     </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> -->
+    <script src="./dist/js/script.js"></script>
+
 
 </body>
 

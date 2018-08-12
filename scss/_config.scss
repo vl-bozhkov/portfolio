@@ -1,8 +1,17 @@
 // ======================================
 //===============variables============
 // ======================================
-$background-url: '../img/background.jpg';
+$background-url: '../img/main-background-image.jpg';
+$background-url-1: '../img/background-image-1.jpg';
+$background-url-2: '../img/background-image-2.jpg';
+$background-url-3: '../img/background-image-3.jpg';
 $primary-color: #f1c40f;
+// $primary-color: #f9ed69;
+$primary-color-1: #ffd429;
+$primary-color-2: #0f19f1;
+$primary-color-3: #0008a4;
+$primary-color-4: #a48505;
+$primary-color-5: #715c07;
 
 // ======================================
 //===============basic-config============
@@ -20,6 +29,8 @@ html {
   font-weight: 300;
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+
   //   @include respond(tab-land) {
   //     // width < 1200?
   //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
@@ -63,4 +74,72 @@ a {
 .btn:active {
   transform: scale(1.02);
   background-color: darken($primary-color, 5);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  display: inline-block;
+  margin-top: 2.5rem;
+  border: 1px solid $primary-color;
+  font-weight: 100;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  letter-spacing: 1px;
+  // text-transform: uppercase;
+  transform: scale(1);
+  transition: 0.3s all;
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: $primary-color;
+}
+
+.text-highlight {
+  color: $primary-color;
+}
+
+.dark-theme {
+  color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url($background-url);
+  font-weight: 700;
+}
+
+.dark-theme-color {
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+.btn-dark-border {
+  border: 1px solid $primary-color !important;
+}
+
+.icons-grid-overlay {
+  // position: fixed !important;
+  // z-index: 999999999999999999999999999999999999999;
+  // right: 50%;
+  // top: 90%;
+  // border: 1px solid red;
+  // left: 12% !important;
+  // width: 10%;
+  // margin: 0 auto;
+  // a:link,
+  // a:visited {
+  //   display: inline;
+  //   // margin-top: -5rem;
+  //   z-index: 999999999999999999999999999999999999999;
+  //   margin: 2rem;
+  //   font-size: 3rem;
+  //   margin-bottom: 1.5rem;
+  //   color: darken(#fff, 20);
+  //   transition: 0.3s color;
+  // }
+
+  // a:hover,
+  // a:active {
+  //   color: #fff;
+  // }
 }
