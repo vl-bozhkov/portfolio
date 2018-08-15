@@ -57,27 +57,27 @@ const btnGhost = document.querySelector('header .btn-ghost');
 const overlayIconsGrid = document.querySelector('.icons-grid');
 let showDarkTheme = false;
 
-btnColorChanger.addEventListener('click', function() {
-  if (!showDarkTheme) {
-    header.classList.add('dark-theme');
-    worksLinkH6.classList.add('dark-theme-color');
-    worksLink.classList.add('dark-theme-color');
-    btnGhost.classList.add('btn-dark-border');
-    navItems.forEach(item => item.classList.add('dark-theme-color'));
-    iconsGrid.forEach(item => item.classList.add('dark-theme-color'));
-    // nav.classList.add('dark-theme-color');
-    showDarkTheme = true;
-  } else {
-    header.classList.remove('dark-theme');
-    // nav.classList.remove('dark-theme-color');
-    navItems.forEach(item => item.classList.remove('dark-theme-color'));
-    iconsGrid.forEach(item => item.classList.remove('dark-theme-color'));
-    worksLinkH6.classList.remove('dark-theme-color');
-    worksLink.classList.remove('dark-theme-color');
-    btnGhost.classList.remove('btn-dark-border');
-    showDarkTheme = false;
-  }
-});
+// btnColorChanger.addEventListener('click', function() {
+//   if (!showDarkTheme) {
+//     header.classList.add('dark-theme');
+//     worksLinkH6.classList.add('dark-theme-color');
+//     worksLink.classList.add('dark-theme-color');
+//     btnGhost.classList.add('btn-dark-border');
+//     navItems.forEach(item => item.classList.add('dark-theme-color'));
+//     iconsGrid.forEach(item => item.classList.add('dark-theme-color'));
+//     // nav.classList.add('dark-theme-color');
+//     showDarkTheme = true;
+//   } else {
+//     header.classList.remove('dark-theme');
+//     // nav.classList.remove('dark-theme-color');
+//     navItems.forEach(item => item.classList.remove('dark-theme-color'));
+//     iconsGrid.forEach(item => item.classList.remove('dark-theme-color'));
+//     worksLinkH6.classList.remove('dark-theme-color');
+//     worksLink.classList.remove('dark-theme-color');
+//     btnGhost.classList.remove('btn-dark-border');
+//     showDarkTheme = false;
+//   }
+// });
 // Menu Functionality
 const burgerBtn = document.querySelector('.js--nav-icon');
 const burgerIcon = document.querySelector('.js--nav-icon i');

@@ -21,25 +21,38 @@ header {
 
       flex-direction: column;
       align-items: center;
-      margin: 40rem 0;
+
       height: 100vh;
-      width: 100vw;
-      opacity: 1;
-      border: 10px solid red;
+      width: 100%;
+
+      // border: 10px solid red;
       z-index: 3;
       background-color: #1c1c25;
+      // background-color: lighten($primary-color, 10);
+      // background-color: darken($primary-color, 5);
+      // background-color: $primary-color;
       color: #fff;
       justify-content: center;
       // transform: translateX(-10vw);
       margin: 0;
+      opacity: 0.95;
+      padding: 2rem 0;
       position: fixed;
-      font-size: 2.8rem;
+      font-size: 4rem;
       display: flex;
       z-index: 1500;
       animation: overlay-anim;
       //   transform: translate3d(0, 0, 0);
-      .nav-link {
+      .nav-link:link,
+      .nav-link:visited {
         color: #fff !important;
+        opacity: 1;
+        border-bottom: 2px solid transparent;
+        transition: 0.2s all;
+      }
+      .nav-link:hover,
+      .nav-link:active {
+        border-bottom: 2px solid #fff;
       }
     }
   }
