@@ -11,6 +11,12 @@ html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden; }
+  @media only screen and (max-width: 400px) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 950px) {
+    html {
+      font-size: 58%; } }
 
 .row {
   max-width: 1140px;
@@ -132,7 +138,6 @@ header nav.menu-overlay {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/main-background-image.jpg");
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -157,7 +162,7 @@ header {
       display: block;
       margin-right: 2rem;
       font-size: 3rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       color: #fff;
       transition: 0.3s color; }
     header .hero-box .icons-grid a:hover,
@@ -262,10 +267,11 @@ header {
         color: #fff; }
 
 .about {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  overflow-x: hidden; }
   .about .portdolio-image img {
     border-radius: 50%;
-    width: 15%;
+    width: 12%;
     display: block;
     margin: 0 auto;
     transform: translateY(8rem); }
@@ -275,13 +281,28 @@ header {
   .about .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 3rem;
+    margin: 0 3%;
     box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.75); }
     @media only screen and (max-width: 1050px) {
       .about .grid-layout {
         margin: 1%; } }
+    @media only screen and (max-width: 800px) {
+      .about .grid-layout {
+        grid-template-columns: 1fr; } }
     .about .grid-layout .box {
-      padding: 8rem 8rem; }
+      padding: 10rem 6rem; }
+      @media only screen and (max-width: 850px) {
+        .about .grid-layout .box:first-child {
+          padding-bottom: 5rem;
+          padding-top: 5rem; } }
+      .about .grid-layout .box:last-child {
+        border-left: 1px solid #1c1c25; }
+        @media only screen and (max-width: 800px) {
+          .about .grid-layout .box:last-child {
+            border-left: none;
+            border-top: 1px solid #1c1c25;
+            padding-top: 5rem;
+            padding-bottom: 5rem; } }
       @media only screen and (max-width: 1050px) {
         .about .grid-layout .box {
           padding: 2rem 2rem; } }
@@ -321,8 +342,9 @@ header {
         color: #000; }
       .about .grid-layout .box .contact-text {
         font-size: 1rem;
-        margin-top: 0.2rem;
-        font-weight: 100;
+        font-style: italic;
+        margin-top: 0.4rem;
+        font-weight: 700;
         letter-spacing: 1px; }
       .about .grid-layout .box h2 {
         font-size: 2rem; }
@@ -330,6 +352,8 @@ header {
         line-height: 145%;
         font-size: 1.7rem;
         margin-top: 1rem; }
+        .about .grid-layout .box .about-text:last-child {
+          margin-bottom: 9rem; }
       .about .grid-layout .box form {
         display: flex;
         flex-direction: column;
@@ -342,7 +366,7 @@ header {
           font-size: 1.4rem;
           font-weight: 300;
           letter-spacing: 1px;
-          margin: 1rem 1rem;
+          margin: 2rem 1rem;
           background-color: #ecf0f1;
           border: none;
           border-bottom: 1px solid #000;
@@ -394,7 +418,11 @@ footer {
     margin-bottom: 3rem; }
     footer .footer-icons-grid i {
       font-size: 3rem;
-      margin: 0 3rem; }
+      margin: 0 3rem;
+      color: #fff;
+      transition: 0.3s all; }
+      footer .footer-icons-grid i:hover {
+        color: #cccccc; }
 
 .projects {
   padding-top: 4rem; }
@@ -416,51 +444,67 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 6rem;
     margin: 5% 0; }
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (max-width: 950px) {
       .projects .container-projects {
-        padding: 0; } }
+        grid-gap: 4rem; } }
+    @media only screen and (max-width: 850px) {
+      .projects .container-projects {
+        grid-gap: 0; } }
     .projects .container-projects .project-description {
       padding-top: 18%;
       margin-left: 5%; }
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (max-width: 850px) {
         .projects .container-projects .project-description {
-          padding-top: 10rem;
-          padding-left: 6rem; } }
-      @media only screen and (max-width: 1000px) {
-        .projects .container-projects .project-description {
-          padding-top: 6rem;
-          padding-left: 4rem; } }
-      @media only screen and (max-width: 800px) {
-        .projects .container-projects .project-description {
-          padding-top: 2rem;
-          padding: 3%; } }
+          width: 100%;
+          margin: 0;
+          padding: 2%;
+          text-align: center; } }
       .projects .container-projects .project-description .description-text {
-        margin-bottom: 1.3rem;
-        font-size: 1.6rem;
-        font-weight: 300; }
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 135%;
+        font-style: italic; }
+        @media only screen and (max-width: 800px) {
+          .projects .container-projects .project-description .description-text {
+            width: 100%; } }
       .projects .container-projects .project-description p {
         width: 60%;
         font-size: 1.5rem;
         line-height: 145%;
-        font-weight: 100; }
-        @media only screen and (max-width: 800px) {
+        font-weight: 300; }
+        @media only screen and (max-width: 1000px) {
           .projects .container-projects .project-description p {
-            width: 90%; } }
+            width: 100%; } }
       .projects .container-projects .project-description h3 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         margin-bottom: 0.5rem;
         font-weight: 700;
-        letter-spacing: 1px; }
+        letter-spacing: 2px; }
       .projects .container-projects .project-description .btn-ghost {
         margin-top: 1rem;
-        color: #000;
+        color: #f1c40f;
         font-weight: 700;
-        font-size: 1.3rem;
-        text-transform: uppercase; }
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        border-radius: 5px;
+        transition: all 0.3s; }
+        .projects .container-projects .project-description .btn-ghost:hover {
+          color: #fff; }
     .projects .container-projects .project-image {
       position: relative;
       width: 70%;
       margin-left: 30%; }
+      @media only screen and (max-width: 850px) {
+        .projects .container-projects .project-image {
+          width: 80%;
+          margin-left: 10%; } }
+      @media only screen and (max-width: 600px) {
+        .projects .container-projects .project-image {
+          width: 90%;
+          margin-left: 5%; } }
       .projects .container-projects .project-image img {
         width: 100%; }
         @media only screen and (max-width: 850px) {
@@ -475,7 +519,11 @@ footer {
           .projects .container-projects .project-image .iphone {
             display: none; } }
   .projects .more-projects {
-    text-align: center; }
+    text-align: center;
+    padding-top: 5rem; }
+    @media only screen and (max-width: 850px) {
+      .projects .more-projects {
+        margin: 12rem 0; } }
     .projects .more-projects h5 {
       font-size: 3.5rem;
       margin-bottom: 1rem;
@@ -491,10 +539,6 @@ footer {
 /* Small tablet to big tablet: from 768px to 1023px */
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 850px) {
-  html {
-    font-size: 59%; }
-  .about .grid-layout {
-    grid-template-columns: 1fr; }
   .projects .project-description {
     order: 1; }
   .projects .container-projects {
@@ -511,6 +555,3 @@ footer {
       display: none; } }
 
 /* Small phones: from 0 to 480px */
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 53.25%; } }

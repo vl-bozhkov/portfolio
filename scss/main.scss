@@ -4,7 +4,7 @@
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url($background-url);
-  background-attachment: fixed;
+  // background-attachment: fixed;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -13,34 +13,16 @@ header {
   position: relative;
   overflow: hidden;
 
-  // .logo-text {
-  //   transform: translateX(5vw);
-  //   font-weight: 100;
-  //   font-size: 300%;
-  //   display: inline-block;
-  //   border: 1px solid white;
-  // }
-
   .hero-box {
-    // padding-left: 6rem;
-    // transform: translateY(40%);
-    // position: absolute;
     &-container {
       position: absolute;
       top: 45%;
       left: 40%;
       transform: translate(-50%, -50%);
-      // text-align: center;
     }
-    // margin-left: 50%;
-    // margin-top: 50%;
-    // -webkit-transform: translate(-50%, -50%);
-    // -ms-transform: translate(-50%, -50%);
-    // transform: translate(-50%, -50%);
 
     .icons-grid {
       position: absolute;
-      // z-index: 9999;
       right: 0;
       top: 30%;
       @media only screen and (max-width: 850px) {
@@ -52,14 +34,13 @@ header {
         // margin-top: -5rem;
         margin-right: 2rem;
         font-size: 3rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         color: #fff;
         transition: 0.3s color;
       }
 
       a:hover,
       a:active {
-        // color: #fff;
         color: darken(#fff, 20);
       }
     }
@@ -139,7 +120,6 @@ header {
   nav {
     display: flex;
     justify-content: flex-end;
-    // transform: translateX(-10vw);
     margin-right: 13rem;
     align-items: center;
     font-size: 1.8rem;
@@ -153,13 +133,11 @@ header {
         color: transparent;
         font-weight: 700;
         letter-spacing: 2px;
-        // border-bottom: 2px solid transparent;
         transition: 0.3s all;
       }
 
       &:hover,
       &:active {
-        // border-bottom: 2px solid $primary-color;
         color: #fff;
       }
       i {
@@ -169,7 +147,6 @@ header {
   }
 
   .works-link {
-    // border: 1px solid red;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -204,14 +181,13 @@ header {
 }
 
 .about {
-  // padding-top: 1rem;
-  // padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  overflow-x: hidden;
 
   .portdolio-image {
     img {
       border-radius: 50%;
-      width: 15%;
+      width: 12%;
       display: block;
       margin: 0 auto;
       transform: translateY(8rem);
@@ -224,15 +200,33 @@ header {
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 3rem;
+    margin: 0 3%;
     @media only screen and (max-width: 1050px) {
       margin: 1%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
     }
     box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.75);
 
     .box {
-      // border: 1px solid red;
-      padding: 8rem 8rem;
+      &:first-child {
+        @media only screen and (max-width: 850px) {
+          padding-bottom: 5rem;
+          padding-top: 5rem;
+        }
+      }
+      &:last-child {
+        border-left: 1px solid #1c1c25;
+        @media only screen and (max-width: 800px) {
+          border-left: none;
+          border-top: 1px solid #1c1c25;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+      }
+      padding: 10rem 6rem;
       @media only screen and (max-width: 1050px) {
         padding: 2rem 2rem;
       }
@@ -287,20 +281,18 @@ header {
 
       &:nth-child(1) {
         background-color: #ecf0f1;
-        // background-color: $primary-color-5;
       }
 
       &:nth-child(2) {
-        // background: #2d3436;
-        // color: #fff;
         background: #ecf0f1;
         color: #000;
       }
 
       .contact-text {
         font-size: 1rem;
-        margin-top: 0.2rem;
-        font-weight: 100;
+        font-style: italic;
+        margin-top: 0.4rem;
+        font-weight: 700;
         letter-spacing: 1px;
       }
       h2 {
@@ -310,6 +302,9 @@ header {
         line-height: 145%;
         font-size: 1.7rem;
         margin-top: 1rem;
+        &:last-child {
+          margin-bottom: 9rem;
+        }
       }
 
       form {
@@ -320,25 +315,19 @@ header {
         label {
           margin: 0.5rem 0 0 0.7rem;
           font-size: 1.4rem;
-          // display: block;
         }
         input,
         textarea {
-          // margin-bottom: 0.5rem;
           font-size: 1.4rem;
           font-weight: 300;
           letter-spacing: 1px;
-          margin: 1rem 1rem;
-          // background-color: #2d3436;
+          margin: 2rem 1rem;
           background-color: #ecf0f1;
           border: none;
-          // border-bottom: 1px solid #fff;
           border-bottom: 1px solid #000;
           outline: none;
-          // color: darken(#fff, 20);
           color: #000;
           transition: 0.5s border-bottom;
-          // width: 100%
           &:focus {
             background-color: #ecf0f1;
             border-bottom: 1px solid $primary-color;
@@ -356,7 +345,6 @@ header {
           font-size: 1.3rem;
           padding: 1rem 2rem;
           letter-spacing: 1px;
-          // text-transform: uppercase;
           transform: scale(1);
           transition: 0.3s all;
           color: $primary-color;
@@ -379,8 +367,6 @@ header {
 
 footer {
   background-color: #1c1c25;
-  // background-color: #2d3436;
-  // background-color: #1e2223;
   padding: 10rem 0;
 
   .footer-text {
@@ -402,6 +388,11 @@ footer {
     i {
       font-size: 3rem;
       margin: 0 3rem;
+      color: #fff;
+      transition: 0.3s all;
+      &:hover {
+        color: darken(#fff, 20);
+      }
     }
   }
 }
@@ -434,69 +425,74 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 6rem;
     margin: 5% 0;
-    // margin: 3rem 0;
-    // padding: 0 10rem;
-    // padding-left: 15%;
-    // width: 70%;
-    @media only screen and (max-width: 1050px) {
-      padding: 0;
+    @media only screen and (max-width: 950px) {
+      grid-gap: 4rem;
+    }
+    @media only screen and (max-width: 850px) {
+      grid-gap: 0;
     }
     .project-description {
-      // border: 1px solid red;
-      // text-align: center;
-      // padding-top: 5rem;
-      // margin-left: 15%;
       padding-top: 18%;
       margin-left: 5%;
-
-      @media only screen and (max-width: 1200px) {
-        padding-top: 10rem;
-        padding-left: 6rem;
-      }
-
-      @media only screen and (max-width: 1000px) {
-        padding-top: 6rem;
-        padding-left: 4rem;
-      }
-
-      @media only screen and (max-width: 800px) {
-        padding-top: 2rem;
-        padding: 3%;
+      @media only screen and (max-width: 850px) {
+        width: 100%;
+        margin: 0;
+        padding: 2%;
+        text-align: center;
       }
 
       .description-text {
-        margin-bottom: 1.3rem;
-        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 135%;
+        font-style: italic;
+        @media only screen and (max-width: 800px) {
+          width: 100%;
+        }
       }
       p {
         width: 60%;
-        @media only screen and (max-width: 800px) {
-          width: 90%;
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
         }
         font-size: 1.5rem;
         line-height: 145%;
-        font-weight: 100;
+        font-weight: 300;
       }
       h3 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         margin-bottom: 0.5rem;
         font-weight: 700;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
       }
       .btn-ghost {
         margin-top: 1rem;
-        color: #000;
+        color: $primary-color;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
+        border-radius: 5px;
+        transition: all 0.3s;
+        &:hover {
+          color: #fff;
+        }
       }
     }
     .project-image {
       position: relative;
       width: 70%;
       margin-left: 30%;
-      // border: 1px solid green;
+      @media only screen and (max-width: 850px) {
+        width: 80%;
+        margin-left: 10%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin-left: 5%;
+      }
       img {
         width: 100%;
         @media only screen and (max-width: 850px) {
@@ -517,8 +513,11 @@ footer {
   }
 
   .more-projects {
-    // text-align: center;
     text-align: center;
+    padding-top: 5rem;
+    @media only screen and (max-width: 850px) {
+      margin: 12rem 0;
+    }
     h5 {
       font-size: 3.5rem;
       margin-bottom: 1rem;

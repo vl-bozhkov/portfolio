@@ -11,9 +11,9 @@
   // html {
   //   font-size: 56.25%;
   // }
-  html {
-    font-size: 59%;
-  }
+  // html {
+  //   font-size: 29%;
+  // }
 
   // .icons-grid {
   // display: flex;
@@ -57,11 +57,11 @@
   //   }
   // }
 
-  .about {
-    .grid-layout {
-      grid-template-columns: 1fr;
-    }
-  }
+  // .about {
+  //   .grid-layout {
+  //     grid-template-columns: 1fr;
+  //   }
+  // }
 
   .projects {
     // div:nth-of-type(1) {
@@ -168,9 +168,9 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 600px) {
-  html {
-    font-size: 53.25%;
-  }
+  // html {
+  //   font-size: 53.25%;
+  // }
   header {
     // .hero-box {
     //   .hero-text {
