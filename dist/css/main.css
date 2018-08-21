@@ -6,7 +6,7 @@
 html {
   background-color: #fff;
   color: #555;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -77,6 +77,14 @@ a {
 .btn-dark-border {
   border: 1px solid #f1c40f !important; }
 
+.text-border {
+  background: #f1c40f;
+  color: #fff;
+  display: inline-block;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 3px; }
+
 header .mobile-nav-icon {
   font-size: 3rem;
   color: #000;
@@ -137,7 +145,7 @@ header nav.menu-overlay {
   visibility: visible; }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/main-background-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/main-background-image.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -267,8 +275,11 @@ header {
         color: #fff; }
 
 .about {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   overflow-x: hidden; }
+  @media only screen and (max-width: 1050px) {
+    .about {
+      margin-bottom: 0.2rem; } }
   .about .portdolio-image img {
     border-radius: 50%;
     width: 12%;
@@ -281,7 +292,7 @@ header {
   .about .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 3%;
+    margin: 0 2%;
     box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.75); }
     @media only screen and (max-width: 1050px) {
       .about .grid-layout {
@@ -316,6 +327,7 @@ header {
           font-size: 6rem;
           margin-right: 3rem;
           margin-bottom: 1rem;
+          color: #000;
           transition: color 0.3s; }
           .about .grid-layout .box .box-icon-grid i:hover {
             cursor: pointer; }
@@ -342,10 +354,10 @@ header {
         color: #000; }
       .about .grid-layout .box .contact-text {
         font-size: 1rem;
-        font-style: italic;
-        margin-top: 0.4rem;
-        font-weight: 700;
-        letter-spacing: 1px; }
+        margin-top: 0.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000; }
       .about .grid-layout .box h2 {
         font-size: 2rem; }
       .about .grid-layout .box .about-text {
@@ -461,12 +473,11 @@ footer {
           text-align: center; } }
       .projects .container-projects .project-description .description-text {
         margin-bottom: 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
         letter-spacing: 1px;
         text-transform: uppercase;
-        line-height: 135%;
-        font-style: italic; }
+        line-height: 135%; }
         @media only screen and (max-width: 800px) {
           .projects .container-projects .project-description .description-text {
             width: 100%; } }

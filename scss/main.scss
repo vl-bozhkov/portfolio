@@ -2,7 +2,7 @@
 @import 'menu';
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url($background-url);
   // background-attachment: fixed;
   height: 100vh;
@@ -181,9 +181,11 @@ header {
 }
 
 .about {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   overflow-x: hidden;
-
+  @media only screen and (max-width: 1050px) {
+    margin-bottom: 0.2rem;
+  }
   .portdolio-image {
     img {
       border-radius: 50%;
@@ -200,7 +202,7 @@ header {
   .grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 3%;
+    margin: 0 2%;
     @media only screen and (max-width: 1050px) {
       margin: 1%;
     }
@@ -235,11 +237,13 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         i {
           display: inline-block;
           font-size: 6rem;
           margin-right: 3rem;
           margin-bottom: 1rem;
+          color: #000;
 
           transition: color 0.3s;
           &:hover {
@@ -290,10 +294,10 @@ header {
 
       .contact-text {
         font-size: 1rem;
-        font-style: italic;
-        margin-top: 0.4rem;
-        font-weight: 700;
+        margin-top: 0.5rem;
+        font-weight: 400;
         letter-spacing: 1px;
+        color: #000;
       }
       h2 {
         font-size: 2rem;
@@ -443,12 +447,12 @@ footer {
 
       .description-text {
         margin-bottom: 1.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
         letter-spacing: 1px;
         text-transform: uppercase;
         line-height: 135%;
-        font-style: italic;
+
         @media only screen and (max-width: 800px) {
           width: 100%;
         }
