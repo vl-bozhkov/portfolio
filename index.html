@@ -7,275 +7,228 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
-        <!-- <p class="logo-text">VL</p> -->
-        <a class="mobile-nav-icon js--nav-icon" href="#">
-            <i class="icon ion-md-menu"></i>
-        </a>
-        <nav>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
 
-            <a href="#project" class="nav-link">
-                Projects
-            </a>
-            <a href="#about" class="nav-link">
-                About
-            </a>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+                <div class="icons-grid">
+                    <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank"> <ion-icon id="icon-facebook" class="icon-style"
+                            name="logo-facebook"></ion-icon></a>
 
-            <a href="#contact" class="nav-link">
-                Contact
-            </a>
+                    <a href=""><ion-icon id="icon-linkedin" class="icon-style" name="logo-linkedin"></ion-icon></a>
 
-            <!-- <a href="#" class="nav-link js--btn-color">
-                <i class="icon ion-ios-color-palette"></i>
-            </a> -->
+                    <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank"><ion-icon id="icon-instagram" class="icon-style"
+                            name="logo-instagram"></ion-icon></a>
 
+                    <a href="https://codepen.io/vladi_bozhkov" target="_blank"><ion-icon id="icon-codepen" class="icon-style"
+                            name="logo-codepen"></ion-icon></a>
 
-        </nav>
-        <div class="hero-box">
-            <div class="hero-box-container">
-                <h1>Hi,
-                    <br> I'm
-                    <span class="name-highlight">Vladi</span>,
-                    <br> Web Developer</h1>
-                <!-- <h1>Vladimir Bozhkov</h1> -->
-                <p id="hero-text" class="hero-text">Based out of Tel Aviv, Israel. Specializing in Full Stack Web Development.
-                    If you are an employer looking to hire, you can get in touch with me
-                    <a href="#">here</a>.</p>
+                    <a href="https://github.com/vl-bozhkov/"> <ion-icon id="icon-github" class="icon-style" name="logo-github"></ion-icon></a>
 
+                    <a href="mailto:vl.bozhkov@gmail.com" target="_top"><ion-icon id="icon-mail" class="icon-style" name="mail"></ion-icon></a>
 
-                <a href="#about" class="btn">About Me</a>
-                <a href="#" class="btn-ghost">Hire Me</a>
+                    <a href=""><ion-icon id="icon-blog" class="icon-style" name="paper"></ion-icon></a>
+                </div>
             </div>
-            <div class="icons-grid ">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="#js--works" class="nav-link">
+                        My Works
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#js--about" class="nav-link">
+                        About Me
+                    </a>
+                </li>
 
-                <a href="https://github.com/vl-bozhkov" target="_blank">
-                    <i class="icon ion-logo-github big-icon"></i>
-                </a>
-
-                <a href="https://codepen.io/dashboard/" target="_blank">
-                    <i class="icon ion-logo-codepen big-icon"></i>
-                </a>
-
-                <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank">
-                    <i class="icon ion-logo-instagram big-icon"></i>
-                </a>
-
-                <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
-                    <i class="icon ion-logo-facebook big-icon"></i>
-                </a>
-
-                <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
-                    <i class="icon ion-logo-linkedin big-icon"></i>
-                </a>
-
+                <li class="nav-item">
+                    <a href="#js--contact" class="nav-link">
+                        How To Reach Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <div class="logo-image">
+                <img src="./dist/img/logo-22.png" alt="">
+            </div>
+            <div class="logo-description">
+                <p class="logo-text">Vladimir Bozhkov</p>
+                <span>Web Developer</span>
             </div>
         </div>
-        <div class="works-link">
+        <div class="hero-text-box">
+            <h1>Hi,
+                <br> I'm <span class="text-highlight">Vladi</span>,
+                <br> Web Developer
+            </h1>
+            <p>Based out of Tel Aviv, Israel. Specializing in Full Stack Web Development. If you are an employer looking
+                to hire, you can get in touch with me <span class="text-highlight">here</span>. </p>
+            <a class="btn btn-full" href="#js--about">About Me</a>
+            <a class="btn btn-ghost" href="#">Hire Me</a>
+        </div>
+        <div class="works-box">
             <h6>Works</h6>
-            <a href="#project">
-                <i class="icon ion-ios-arrow-round-down "></i>
+            <a href="#js--works">
+                <!-- <ion-icon class="arrow" name="arrow-dropdown"></ion-icon> -->
+                <!-- <ion-icon class="arrow" name="arrow-dropdown-circle"></ion-icon> -->
+
+                <ion-icon class="arrow" name="code-download"></ion-icon>
+
             </a>
 
-            <!-- <a class="works-link" href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
-                <i class="icon ion-logo-linkedin "></i>
-            </a> -->
         </div>
     </header>
-
-    <section class="projects" id="project">
-        <h2>FEATURED
-            <span class="text-highlight">WORKS</span>
-        </h2>
-        <div class="container-projects">
+    <section class="works" id="js--works">
+        <h2>Featured <span class="text-highlight">Works</span> </h2>
+        <div class="project-container">
             <div class="project-image">
-                <img class="macbook" src="./dist/img/project1_macbookpro15_front 2.png" alt="">
-                <img class="iphone" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="">
+                <img class="macbook-project" src="./dist/img/project1_macbookpro15_front 2.png" alt="macbook project 1">
+                <img class="iphone-project" src="./dist/img/project1_iphonexspacegrey_portrait.png" alt="iphone project 1">
             </div>
             <div class="project-description">
                 <h3>TV Shows App</h3>
-                <p class="description-text text-highlight"><span class="text-border">REACT</span> <span class="text-border">JAVASCRIPT</span>
-                    <span class="text-border">HTML5</span> <span class="text-border">CSS3</span> <span class="text-border">RESPONSIVE
-                        WEBSITE
-                    </span> <span class="text-border">BOOTSTRAP</span>
-                </p>
-                <p>React Application in a style of netflix in a RESTful master-detail implementation. </p>
-                <a href="https://tv-shows-app.herokuapp.com/" target="_blank" class="btn-ghost">visit website</a>
+                <div> <span class="border-text">REACT</span> <span class="border-text">JAVASCRIPT</span><span class="border-text">HTML5</span>
+                    <span class="border-text">CSS3</span><span class="border-text">BOOTSTRAP</span> <span class="border-text">BOOTSTRAP</span></div>
+                <p>React Application in a style of netflix in a RESTful master-detail implementation.</p>
+                <a href="#" class="btn btn-ghost">View Website</a>
             </div>
-
         </div>
         <hr>
-        <div class="container-projects">
+        <div class="project-container">
             <div class="project-image">
-                <img class="macbook" src="./dist/img/macbook-project-2.png" alt="">
-                <img class="iphone" src="./dist/img/iphone-project-2.png" alt="">
+                <img class="macbook-project" src="./dist/img/macbook-project-2.png" alt="macbook project 2">
+                <img class="iphone-project" src="./dist/img/iphone-project-2.png" alt="iphone project 2">
             </div>
             <div class="project-description">
                 <h3>WEATHER APP</h3>
-                <p class="description-text text-highlight"><span class="text-border">REACT</span> <span class="text-border">REDUX</span>
-                    <span class="text-border">BOOTSTRAP</span> <span class="text-border">GOOGLE MAPS</span> <span class="text-border">RESPONSIVE
-                        WEBSITE
-                    </span>, <span class="text-border">WEATHER API
-                    </span>
-                </p>
+                <div> <span class="border-text">REACT</span> <span class="border-text">REDUX</span><span class="border-text">HTML5</span>
+                    <span class="border-text">CSS3</span><span class="border-text">BOOTSTRAP</span> <span class="border-text">BOOTSTRAP</span></div>
                 <p>Weather forecast React browser application that let users search cities and submit queries to weather
                     api.
                 </p>
-                <a href="http://israel-weather-forecast.surge.sh/" target="_blank" class="btn-ghost">visit website</a>
+                <a href="#" class="btn btn-ghost">View Website</a>
             </div>
-
         </div>
         <hr>
-
-        <div class="container-projects">
+        <div class="project-container">
             <div class="project-image">
-                <img class="macbook" src="./dist/img/macbook-project-3.png" alt="">
-                <img class="iphone" src="./dist/img/iphone-project-3.png" alt="">
+                <img class="macbook-project" src="./dist/img/macbook-project-3.png" alt="macbook project 1">
+                <img class="iphone-project" src="./dist/img/iphone-project-3.png" alt="iphone project 1">
             </div>
             <div class="project-description">
                 <h3>Top Yotube</h3>
-                <p class="description-text text-highlight"><span class="text-border">REACT</span><span class="text-border">REDUX</span>
-                    <span class="text-border">YOUTUBE API</span>, <span class="text-border">MATERIAL DESIGN</span><span class="text-border">RESPONSIVE
-                        WEBSITE
-                    </span>
-                </p>
+                <div> <span class="border-text">REACT</span> <span class="border-text">JAVASCRIPT</span><span class="border-text">HTML5</span>
+                    <span class="border-text">CSS3</span><span class="border-text">MATERIALIZE</span> <span class="border-text">BOOTSTRAP</span></div>
                 <p>React application that lets you check top videos on youtube, data get fetched out of youtube api.</p>
-                <a href="https://desolate-retreat-82779.herokuapp.com/" target="_blank" class="btn-ghost">visit website</a>
+                </p>
+                <a href="#" class="btn btn-ghost">View Website</a>
             </div>
-
         </div>
         <hr>
-        <div class="container-projects">
+        <div class="project-container">
             <div class="project-image">
-                <img class="macbook" src="./dist/img/macbook-project-4.png" alt="">
-                <img class="iphone" src="./dist/img/iphone-project-4.png" alt="">
+                <img class="macbook-project" src="./dist/img/macbook-project-4.png" alt="macbook project 1">
+                <img class="iphone-project" src="./dist/img/iphone-project-4.png" alt="iphone project 1">
             </div>
             <div class="project-description">
                 <h3>Portfolio</h3>
-                <p class="description-text "><span class="text-border">UX/UI DESIGN</span> <span class="text-border">HTML5</span><span
-                        class="text-border">CSS3</span> <span class="text-border">RESPONSIVE DESIGN</span>
-                    <span class="text-border">SASS</span>
+                <div> <span class="border-text">REACT</span> <span class="border-text">SASS</span><span class="border-text">HTML5</span>
+                    <span class="border-text">UI/UX</span><span class="border-text">RESPONSIVE DESIGN</span> <span class="border-text">JAVASCRIPT</span></div>
+                <p>Portfolio website showcase my skills, fully responsive website.
                 </p>
-                <p>Portfolio website showcase my skills, fully responsive website.</p>
-                <a href="https://vl-bozhkov.github.io/portfolio/" target="_blank" class="btn-ghost">visit website</a>
+                <a href="#" class="btn btn-ghost">View Website</a>
             </div>
-
         </div>
         <hr>
         <div class="more-projects">
-            <h5>Web is fun.</h5>
+            <h2>Web is fun.</h2>
             <a href="https://codepen.io/vladi_bozhkov/" target="_blank">MORE EXPERIMENTS & OPEN SOURCE</a>
-
         </div>
+    </section>
+    <section class="about" id="js--about">
+        <div class="about-wrapper">
+            <img src="./dist/img/portrait-big.jpg" alt="">
+            <h3>About Me</h3>
+            <p>I'm Vladimir Bozhkov, a self-taught <span class="text-highlight">Full Stack Web developer</span>. I'm a guy
+                who likes making interesting things with web technologies.</p>
+            <p> I like to resolve <span class="text-highlight">web applications problems</span> , create smart user interface
+                and developing rich web experiences.I work to the principle that Simple is beautiful.</p>
+            <p> Browse some of my work, view my skills, or get <span class="text-highlight">in touch</span>. You can also
+                find me on Facebook, LinkedIn, Github, CodePen and Instagram.</p>
+            <!-- <p>I got serious passion for sport, in my free time i love to run and compete in all sort of running events.
+            </p> -->
 
-
+            <div class="dev-icon-grid">
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="dev-icon-grid">
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-mongodb-plain colored"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-github-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            </div>
+            <!-- <p>Dont forget to check out my blog at: <a href=""><ion-icon class="icon-blog" name="paper"></ion-icon></a></p> -->
+        </div>
     </section>
 
-    <section class="about" id="about-contact">
-        <div class="portdolio-image" id="about">
-            <img src="./dist/img/vladi.jpg" alt="">
-        </div>
-
-        <div class="grid-layout">
-            <div class="box">
-                <h2>About Me</h2>
-                <div class="about-text-container">
-                    <p class="about-text">I'm Vladimir Bozhkov, a self-taught <span class="text-highlight">Full Stack Web
-                            developer
-                        </span>
-                        . I'm a guy who likes making interesting things with <span class="text-highlight">web technologies.</span>
-                    </p>
-                    <p class="about-text">I like to resolve <span class="text-highlight">design problems</span> , create
-                        smart
-                        <span class="text-highlight">user interface</span> and developing rich
-                        <span class="text-highlight">web experiences</span> & <span class="text-highlight">web applications.</span>I
-                        work to the principle that Simple is beautiful.</p>
-                    <p class="about-text">Browse some of my work, view my skills, or get in touch. You can also find me on
-                        <span class="text-highlight"> Facebook, LinkedIn, Github, CodePen and Instagram.</span>
-
-                    </p>
-                </div>
-                <div class="box-icon-grid">
-                    <i class="devicon-react-original-wordmark"></i>
-                    <i class="devicon-html5-plain-wordmark"></i>
-                    <i class="devicon-css3-plain-wordmark"></i>
-                    <i class="devicon-bootstrap-plain-wordmark"></i>
-                </div>
-                <div class="box-icon-grid">
-                    <i class="devicon-nodejs-plain-wordmark"></i>
-                    <i class="devicon-mongodb-plain-wordmark"></i>
-                    <i class="devicon-git-plain-wordmark"></i>
-                    <i class="devicon-github-plain-wordmark"></i>
-                </div>
-
-            </div>
-            <div class="box" id="contact">
-                <h2>Lets Talk.</h2>
-                <p class="contact-text text-highlight">
-                    New projects, freelance inquiry or even a coffee.
-                </p>
-                <form method="POST" action="https://formspree.io/vl.bozhkov@gmail.com">
-
-                    <label for="">Name</label>
-                    <input type="text" name="name" required>
-
-
-
-                    <label for="">Email</label>
-                    <input type="email" name="email" required>
-
-
-
-                    <label for="">Text</label>
-                    <textarea required name="message" id="" cols="20" rows="10"></textarea>
-
-                    <input type="hidden" name="_next" value="https://vl-bozhkov.github.io/portfolio/" />
-                    <button type="submit" class="submit-btn-ghost">Send
-                    </button>
-                </form>
-            </div>
-
-        </div>
+    <section class="contact" id="js--contact">
+        <h3>Lets Talk.</h3>
+        <p>New projects, freelance inquiry or even a coffee.</p>
+        <a id="btn-ghost" class="btn btn-ghost" href="mailto:vl.bozhkov@gmail.com" target="_top">Email Vladi</a>
+        <span>vl.bozhkov@gmail.com</span>
     </section>
 
     <footer>
-        <div class="footer-icons-grid">
+        <div class="icons-grid">
+            <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank"> <ion-icon id="icon-facebook" class="icon-style footer-icon"
+                    name="logo-facebook"></ion-icon></a>
 
-            <a href="https://github.com/vl-bozhkov" target="_blank">
-                <i class="icon ion-logo-github big-icon"></i>
-            </a>
+            <a href=""><ion-icon id="icon-linkedin" class="icon-style footer-icon" name="logo-linkedin"></ion-icon></a>
 
-            <a href="https://codepen.io/dashboard/" target="_blank">
-                <i class="icon ion-logo-codepen big-icon"></i>
-            </a>
+            <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank"><ion-icon id="icon-instagram" class="icon-style footer-icon"
+                    name="logo-instagram"></ion-icon></a>
 
-            <a href="https://www.instagram.com/vladi_bozhkov/" target="_blank">
-                <i class="icon ion-logo-instagram big-icon"></i>
-            </a>
+            <a href="https://codepen.io/vladi_bozhkov/" target="_blank"><ion-icon id="icon-codepen" class="icon-style footer-icon"
+                    name="logo-codepen"></ion-icon></a>
 
-            <a href="https://www.facebook.com/vladimir.bozhkov" target="_blank">
-                <i class="icon ion-logo-facebook big-icon"></i>
-            </a>
 
+
+            <a href=""><ion-icon id="icon-mail" class="icon-style footer-icon" name="mail"></ion-icon></a>
         </div>
-        <span class="footer-text">Coded and Designed with
-            <i class="icon ion-md-heart"></i> by Vladimir Bozhkov &copy; 2018</span>
+        <p class="website-link">Find the <span class="text-highlight">code</span> of this site: <a href="https://github.com/vl-bozhkov/portfolio"
+                target="_blank"> <ion-icon id="icon-github" class="icon-style footer-icon" name="logo-github"></ion-icon></a></p>
+        <p class="footer-text">Crafted with
+            <i class="icon ion-md-heart icon-heart"></i> by <span>Vladimir Bozhkov</span> &copy; 2018</p>
     </footer>
-
-    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.0/dist/ionicons.js"></script>
     <script src="./dist/js/script.js"></script>
-
-
 </body>
 
 </html>

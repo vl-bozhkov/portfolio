@@ -1,0 +1,391 @@
+$small-portrait: '../img/portrait-small.jpg';
+//Wide Screen
+@include mediaXl {
+}
+// ======================================
+//===============mediaLg============
+// ======================================
+//Desktop and Laptop Screen
+@include mediaLg {
+  // ======================================
+  //===============about============
+  // ======================================
+
+  .about {
+    .about-wrapper {
+      width: 60%;
+      padding: 10% 5%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+      width: 10%;
+      left: 45%;
+    }
+  }
+  // ======================================
+  //===============logo============
+  // ======================================
+  header {
+    .logo-container {
+      display: flex;
+      margin-left: 5rem;
+      padding-top: 2rem;
+      .logo-image {
+        img {
+          width: 6rem;
+        }
+      }
+
+      .logo-description {
+        margin-top: 1.7rem;
+        margin-left: 0.5rem;
+        p,
+        span {
+          color: #fff;
+        }
+        .logo-text {
+          font-size: 1.7rem;
+          font-family: 'Indie Flower', cursive;
+          // margin-bottom: 0.3rem;
+        }
+
+        span {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  // ======================================
+  //===============works============
+  // ======================================
+  .works {
+    .project-container {
+      // border: 1px solid red;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+
+      .project-image {
+        // border: 1px solid blue;
+        position: relative;
+        .macbook-project {
+          width: 95%;
+          margin-left: 2.5%;
+        }
+        .iphone-project {
+          width: 33%;
+          position: absolute;
+          top: 45%;
+          right: -4%;
+        }
+      }
+
+      .project-description {
+        // border: 1px solid green;
+        position: absolute;
+        top: 25%;
+        left: 55%;
+
+        div {
+          margin-bottom: 1.3rem;
+          width: 80%;
+          .border-text {
+            color: #fff;
+            background-color: $primary-color;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.3rem;
+            padding: 0.4rem;
+            text-transform: uppercase;
+            font-size: 7px;
+          }
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          letter-spacing: 1px;
+          margin-bottom: 0.2rem;
+          letter-spacing: 2px;
+        }
+
+        p {
+          line-height: 1.35;
+          font-size: 1.6rem;
+          margin-bottom: 1.3rem;
+          width: 90%;
+        }
+
+        .btn {
+          &:link,
+          &:visited {
+            padding: 1rem 1.5rem;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+          }
+        }
+      }
+      //End project container
+    }
+  }
+}
+// ======================================
+//===============mediaMd============
+// ======================================
+//Wide Tablet Small Laptop
+@include mediaMd {
+  html {
+    font-size: 59.5%;
+  }
+
+  // ======================================
+  //===============about============
+  // ======================================
+
+  .about {
+    img {
+      top: 45;
+      width: 15%;
+      left: 43%;
+    }
+    .about-wrapper {
+      width: 60%;
+      padding: 10% 5%;
+    }
+  }
+
+  // ======================================
+  //===============menu============
+  // ======================================
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 60vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 2.4rem;
+  }
+  .menu-branding {
+    height: 40vh;
+    transform: translate3d(100%, 0, 0);
+    .portrait {
+      width: 150px;
+      height: 150px;
+      background: url($small-portrait);
+    }
+  }
+  // ======================================
+  //===============about============
+  // ======================================
+
+  .about {
+    img {
+      top: 2%;
+    }
+    .about-wrapper {
+      width: 85%;
+      padding: 10% 10%;
+    }
+  }
+
+  // ======================================
+  //===============header============
+  // ======================================
+  header {
+    .hero-text-box {
+      p {
+        width: 100%;
+        line-height: 1.5;
+      }
+
+      h1 {
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+
+  // ======================================
+  //===============works============
+  // ======================================
+  .works {
+    .project-container {
+      // border: 1px solid red;
+      display: grid;
+      grid-template-columns: 1fr;
+      position: relative;
+
+      .project-image {
+        // border: 1px solid blue;
+        position: relative;
+        .macbook-project {
+          width: 95%;
+          margin-left: 2.5%;
+        }
+        .iphone-project {
+          width: 33%;
+          position: absolute;
+          top: 45%;
+          right: -4%;
+        }
+      }
+
+      .project-description {
+        // border: 1px solid green;
+        position: static;
+        text-align: center;
+        margin-bottom: 3rem;
+        div {
+          width: 80%;
+          margin: 0 auto;
+          .border-text {
+            color: #fff;
+            background-color: $primary-color;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0.4rem;
+            text-transform: uppercase;
+            font-size: 7px;
+          }
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          letter-spacing: 1px;
+          margin-bottom: 0.2rem;
+          letter-spacing: 2px;
+        }
+
+        p {
+          line-height: 1.35;
+          font-size: 1.6rem;
+          margin-bottom: 1.3rem;
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .btn {
+          &:link,
+          &:visited {
+            padding: 1rem 1.5rem;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin: 2rem 0;
+          }
+        }
+      }
+      //End project container
+    }
+  }
+
+  //end of mediaMd
+}
+// ------------------------------------------------
+// ------------------------------------------------
+// ======================================
+//===============mediaSm============
+// ======================================
+// ------------------------------------------------
+// -------------------------------------------------
+//Desktop and Laptop Screen
+//Smartphones
+@include mediaSm {
+  html {
+    font-size: 55.5%;
+  }
+
+  // ======================================
+  //===============logo============
+  // ======================================
+  header {
+    .logo-container {
+      display: flex;
+      margin-left: 0.5rem;
+      padding-top: 1.3rem;
+      .logo-image {
+        img {
+          width: 5.5rem;
+        }
+      }
+
+      .logo-description {
+        margin-top: 1.2rem;
+        margin-left: 0.5rem;
+        p,
+        span {
+          color: #fff;
+        }
+        .logo-text {
+          font-size: 1.7rem;
+          font-family: 'Indie Flower', cursive;
+          // margin-bottom: 0.3rem;
+        }
+
+        span {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  // ======================================
+  //===============about============
+  // ======================================
+
+  .about {
+    img {
+      top: 2%;
+      width: 25%;
+      left: 38%;
+    }
+    .about-wrapper {
+      width: 95%;
+      padding: 20% 5%;
+    }
+  }
+
+  // ======================================
+  //===============header============
+  // ======================================
+  header {
+    .hero-text-box {
+      width: 90%;
+      margin: 0 auto;
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        display: none;
+      }
+    }
+
+    .works-box {
+      // display: none;
+      left: 43%;
+    }
+  }
+
+  // ======================================
+  //===============footer============
+  // ======================================
+
+  footer {
+    .icons-grid {
+      justify-content: space-around;
+    }
+  }
+}
