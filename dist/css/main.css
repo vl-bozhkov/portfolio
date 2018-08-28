@@ -183,7 +183,8 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../img/background.jpg");
   height: 100vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  overflow: hidden; }
   header .logo-container {
     display: flex;
     margin-left: 11rem;
@@ -244,25 +245,14 @@ header {
           color: #cccccc; }
 
 .works {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  overflow: hidden; }
   .works h2 {
     text-align: center;
     font-size: 3.5rem;
     word-spacing: 1px;
     letter-spacing: 2px;
     font-weight: 300; }
-  .works .more-projects {
-    text-align: center;
-    margin: 13rem; }
-    .works .more-projects a:link, .works .more-projects a:visited {
-      color: #f1c40f;
-      font-size: 1.7rem;
-      margin-top: 1rem;
-      display: inline-block;
-      letter-spacing: 1px;
-      transition: all 0.5s ease-out; }
-    .works .more-projects a:hover, .works .more-projects a:active {
-      color: #d0a90c; }
   .works .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -304,11 +294,26 @@ header {
         font-size: 1.6rem;
         margin-bottom: 1.3rem;
         width: 70%; }
-      .works .project-container .project-description .btn:link, .works .project-container .project-description .btn:visited {
+      .works .project-container .project-description #btn:link, .works .project-container .project-description #btn:visited {
         padding: 1rem 1.5rem;
-        font-size: 1.3rem;
+        font-size: 10.3rem;
         letter-spacing: 1px;
         font-weight: 100; }
+
+.more-projects {
+  text-align: center;
+  margin: 13rem 0; }
+  .more-projects h2 {
+    font-size: 3rem; }
+  .more-projects a:link, .more-projects a:visited {
+    color: #f1c40f;
+    font-size: 1.5rem;
+    margin-top: 1.3rem;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-out; }
+  .more-projects a:hover, .more-projects a:active {
+    color: #d0a90c; }
 
 .about {
   padding: 7rem 0;
@@ -557,8 +562,7 @@ footer {
       .works .project-container .project-description .btn:link, .works .project-container .project-description .btn:visited {
         padding: 1rem 1.5rem;
         font-size: 1.3rem;
-        letter-spacing: 1px;
-        font-weight: 100;
+        font-weight: 700;
         margin: 2rem 0; } }
 
 @media screen and (max-width: 500px) {
@@ -587,8 +591,8 @@ footer {
     width: 25%;
     left: 38%; }
   .about .about-wrapper {
-    width: 95%;
-    padding: 20% 5%; }
+    width: 100%;
+    padding: 20% 2.5%; }
   header .hero-text-box {
     width: 90%;
     margin: 0 auto; }

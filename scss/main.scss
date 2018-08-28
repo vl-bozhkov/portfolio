@@ -10,6 +10,8 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+
   .logo-container {
     display: flex;
     margin-left: 11rem;
@@ -104,34 +106,13 @@ header {
 // ======================================
 .works {
   padding: 4rem 0;
+  overflow: hidden;
   h2 {
     text-align: center;
     font-size: 3.5rem;
     word-spacing: 1px;
     letter-spacing: 2px;
     font-weight: 300;
-  }
-
-  .more-projects {
-    text-align: center;
-
-    margin: 13rem;
-    a {
-      &:link,
-      &:visited {
-        color: $primary-color;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-        display: inline-block;
-        letter-spacing: 1px;
-        @include easeOut;
-      }
-
-      &:hover,
-      &:active {
-        color: darken($primary-color, 7);
-      }
-    }
   }
 
   .project-container {
@@ -191,11 +172,11 @@ header {
         width: 70%;
       }
 
-      .btn {
+      #btn {
         &:link,
         &:visited {
           padding: 1rem 1.5rem;
-          font-size: 1.3rem;
+          font-size: 10.3rem;
           letter-spacing: 1px;
           font-weight: 100;
         }
@@ -205,8 +186,36 @@ header {
   }
 }
 // ======================================
+//===============more-projects============
+// ======================================
+
+.more-projects {
+  text-align: center;
+  margin: 13rem 0;
+  h2 {
+    font-size: 3rem;
+  }
+  a {
+    &:link,
+    &:visited {
+      color: $primary-color;
+      font-size: 1.5rem;
+      margin-top: 1.3rem;
+      display: inline-block;
+      letter-spacing: 1px;
+      @include easeOut;
+    }
+
+    &:hover,
+    &:active {
+      color: darken($primary-color, 7);
+    }
+  }
+}
+// ======================================
 //===============about============
 // ======================================
+
 .about {
   padding: 7rem 0;
   position: relative;

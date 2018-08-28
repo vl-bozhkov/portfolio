@@ -282,8 +282,8 @@ $small-portrait: '../img/portrait-small.jpg';
           &:visited {
             padding: 1rem 1.5rem;
             font-size: 1.3rem;
-            letter-spacing: 1px;
-            font-weight: 100;
+
+            font-weight: 700;
             margin: 2rem 0;
           }
         }
@@ -353,8 +353,8 @@ $small-portrait: '../img/portrait-small.jpg';
       left: 38%;
     }
     .about-wrapper {
-      width: 95%;
-      padding: 20% 5%;
+      width: 100%;
+      padding: 20% 2.5%;
     }
   }
 
