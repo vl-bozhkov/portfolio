@@ -205,9 +205,9 @@ header {
         font-weight: 700; }
   header .hero-text-box {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 30%;
-    transform: translate(-30%, -55%);
+    transform: translate(-30%, -45%);
     color: #fff; }
     header .hero-text-box h1 {
       font-size: 5rem;
@@ -328,20 +328,18 @@ header {
     width: 50%;
     margin: 0 auto;
     padding: 10% 5%;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
-    background-color: #444; }
+    -webkit-animation: shadow-drop-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: shadow-drop-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
     .about .about-wrapper h3 {
       font-size: 3rem;
       text-align: center;
       margin-bottom: 4rem;
-      color: #555;
-      color: #fff; }
+      color: #555; }
     .about .about-wrapper p {
       font-size: 1.7rem;
       line-height: 1.45;
       margin-bottom: 2rem;
-      color: #555;
-      color: #fff; }
+      color: #555; }
       .about .about-wrapper p:last-child {
         margin-top: 3rem; }
       .about .about-wrapper p .icon-blog {
@@ -358,7 +356,7 @@ header {
         font-size: 5.5rem; }
 
 .contact {
-  padding: 7rem 0;
+  padding: 10rem 0;
   text-align: center; }
   .contact h3 {
     font-size: 3rem;
@@ -404,6 +402,23 @@ footer {
       margin: 0 1rem; }
   footer p {
     color: #fff; }
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-tb
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-tb {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35); } }
+
+@keyframes shadow-drop-tb {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35); } }
 
 @media screen and (max-width: 1170px) {
   .about .about-wrapper {
@@ -573,7 +588,7 @@ footer {
     margin-left: 0.5rem;
     padding-top: 1.3rem; }
     header .logo-container .logo-image img {
-      width: 5.5rem; }
+      width: 6.3rem; }
     header .logo-container .logo-description {
       margin-top: 1.2rem;
       margin-left: 0.5rem; }
@@ -581,11 +596,12 @@ footer {
       header .logo-container .logo-description span {
         color: #fff; }
       header .logo-container .logo-description .logo-text {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         font-family: 'Indie Flower', cursive; }
       header .logo-container .logo-description span {
-        font-size: 1rem;
-        font-weight: 700; }
+        font-size: 1.3rem;
+        font-weight: 100;
+        letter-spacing: 2px; }
   .about img {
     top: 2%;
     width: 25%;
@@ -604,3 +620,11 @@ footer {
     left: 43%; }
   footer .icons-grid {
     justify-content: space-around; } }
+
+@media screen and (max-height: 500px) {
+  header .logo-container {
+    display: none; }
+  header .hero-text-box p {
+    display: none; }
+  header .works-box {
+    display: none; } }

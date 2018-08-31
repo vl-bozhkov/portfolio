@@ -167,3 +167,9 @@ hr {
     @content;
   }
 }
+
+@mixin mediaHeight {
+  @media screen and (max-height: 500px) {
+    @content;
+  }
+}

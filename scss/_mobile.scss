@@ -1,4 +1,5 @@
 $small-portrait: '../img/portrait-small.jpg';
+
 //Wide Screen
 @include mediaXl {
 }
@@ -318,7 +319,7 @@ $small-portrait: '../img/portrait-small.jpg';
       padding-top: 1.3rem;
       .logo-image {
         img {
-          width: 5.5rem;
+          width: 6.3rem;
         }
       }
 
@@ -330,14 +331,15 @@ $small-portrait: '../img/portrait-small.jpg';
           color: #fff;
         }
         .logo-text {
-          font-size: 1.7rem;
+          font-size: 2.5rem;
           font-family: 'Indie Flower', cursive;
           // margin-bottom: 0.3rem;
         }
 
         span {
-          font-size: 1rem;
-          font-weight: 700;
+          font-size: 1.3rem;
+          font-weight: 100;
+          letter-spacing: 2px;
         }
       }
     }
@@ -386,6 +388,23 @@ $small-portrait: '../img/portrait-small.jpg';
   footer {
     .icons-grid {
       justify-content: space-around;
+    }
+  }
+}
+@include mediaHeight {
+  header {
+    .logo-container {
+      display: none;
+    }
+
+    .hero-text-box {
+      p {
+        display: none;
+      }
+    }
+
+    .works-box {
+      display: none;
     }
   }
 }

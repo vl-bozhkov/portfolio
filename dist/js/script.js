@@ -57,3 +57,11 @@ for (let i = 0; i < navLinks.length; i++) {
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 2000
 });
+
+var w = window,
+  d = document,
+  e = d.documentElement,
+  g = d.getElementsByTagName('body')[0],
+  x = w.innerWidth || e.clientWidth || g.clientWidth,
+  y = w.innerHeight || e.clientHeight || g.clientHeight;
+console.log(x + ' × ' + y);
