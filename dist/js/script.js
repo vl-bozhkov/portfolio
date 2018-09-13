@@ -34,12 +34,10 @@ function toggleMenu() {
 
 // turn menu button to black when scrolls to white background
 const btnLines = document.querySelectorAll('.menu-btn .btn-line');
-console.log(btnLines);
 const waypoint = new Waypoint({
   element: document.getElementById('js--works'),
   handler: function() {
     btnLines.forEach(line => {
-      console.log(line);
       line.classList.toggle('black-menu');
     });
   }

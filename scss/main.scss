@@ -250,7 +250,7 @@ header {
 
     p {
       font-size: 1.7rem;
-      line-height: 1.45;
+      line-height: 1.5;
       margin-bottom: 2rem;
       color: #555;
       // color: #fff;
@@ -290,6 +290,7 @@ header {
   p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
+    color: $primary-color;
   }
   #btn-ghost {
     font-size: 2rem;
