@@ -195,6 +195,15 @@ header {
   h2 {
     font-size: 3rem;
   }
+  .more-projects-btn {
+    border: 1px solid $primary-color;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    &:hover {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
   a {
     &:link,
     &:visited {

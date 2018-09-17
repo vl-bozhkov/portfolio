@@ -305,6 +305,13 @@ header {
   margin: 13rem 0; }
   .more-projects h2 {
     font-size: 3rem; }
+  .more-projects .more-projects-btn {
+    border: 1px solid #f1c40f;
+    padding: 1rem 3rem;
+    border-radius: 15px; }
+    .more-projects .more-projects-btn:hover {
+      color: #fff;
+      background: #f1c40f; }
   .more-projects a:link, .more-projects a:visited {
     color: #f1c40f;
     font-size: 1.5rem;
