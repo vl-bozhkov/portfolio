@@ -110,7 +110,7 @@ hr {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.97;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible;
@@ -130,21 +130,15 @@ hr {
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/vladi-big.jpg");
-      border-radius: 50%;
-      border: 3px solid #f1c40f; }
   .menu .menu-nav .nav-item {
     transform: translate3d(60rem, 0, 0);
     transition: all 0.5s ease-out; }
@@ -184,13 +178,14 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  overflow: hidden; }
+  overflow: hidden;
+  background-attachment: fixed; }
   header .logo-container {
     display: flex;
     margin-left: 11rem;
     padding-top: 2rem; }
     header .logo-container .logo-image img {
-      width: 6rem; }
+      width: 5rem; }
     header .logo-container .logo-description {
       margin-top: 1.2rem;
       margin-left: 0.5rem; }
@@ -198,11 +193,13 @@ header {
       header .logo-container .logo-description span {
         color: #fff; }
       header .logo-container .logo-description .logo-text {
-        font-size: 2rem;
-        font-family: 'Indie Flower', cursive; }
-      header .logo-container .logo-description span {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
         font-weight: 700; }
+      header .logo-container .logo-description span {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2.3px; }
   header .hero-text-box {
     position: absolute;
     top: 45%;
@@ -283,7 +280,8 @@ header {
           margin-bottom: 0.3rem;
           padding: 0.4rem;
           text-transform: uppercase;
-          font-size: 8px; }
+          font-size: 1rem;
+          font-weight: 700; }
       .works .project-container .project-description h3 {
         font-size: 2.5rem;
         letter-spacing: 1px;
@@ -294,21 +292,16 @@ header {
         font-size: 1.6rem;
         margin-bottom: 1.3rem;
         width: 70%; }
-      .works .project-container .project-description #btn:link, .works .project-container .project-description #btn:visited {
-        padding: 1rem 1.5rem;
-        font-size: 10.3rem;
-        letter-spacing: 1px;
-        font-weight: 100; }
 
 .more-projects {
   text-align: center;
-  margin: 13rem 0; }
+  margin: 15rem 0; }
   .more-projects h2 {
     font-size: 3rem; }
   .more-projects .more-projects-btn {
     border: 1px solid #f1c40f;
     padding: 1rem 3rem;
-    border-radius: 15px; }
+    border-radius: 0.5rem; }
     .more-projects .more-projects-btn:hover {
       color: #fff;
       background: #f1c40f; }
@@ -327,9 +320,9 @@ header {
   position: relative; }
   .about img {
     position: absolute;
-    top: 0;
+    top: -20px;
     border-radius: 50%;
-    width: 10%;
+    width: 12%;
     left: 45%; }
   .about .about-wrapper {
     width: 50%;
@@ -432,12 +425,14 @@ footer {
   .about .about-wrapper {
     width: 60%;
     padding: 10% 5%; }
+    .about .about-wrapper h3 {
+      margin-top: 5rem; }
   .about img {
     position: absolute;
-    top: 0;
+    top: -15px;
     border-radius: 50%;
-    width: 10%;
-    left: 45%; }
+    width: 15%;
+    left: 43%; }
   header .logo-container {
     display: flex;
     margin-left: 5rem;
@@ -451,8 +446,7 @@ footer {
       header .logo-container .logo-description span {
         color: #fff; }
       header .logo-container .logo-description .logo-text {
-        font-size: 1.7rem;
-        font-family: 'Indie Flower', cursive; }
+        font-size: 1.7rem; }
       header .logo-container .logo-description span {
         font-size: 1rem;
         font-weight: 700; }
@@ -485,7 +479,7 @@ footer {
           margin-bottom: 0.3rem;
           padding: 0.4rem;
           text-transform: uppercase;
-          font-size: 7px; }
+          font-size: 8px; }
       .works .project-container .project-description h3 {
         font-size: 2.5rem;
         letter-spacing: 1px;
@@ -500,18 +494,20 @@ footer {
         padding: 1rem 1.5rem;
         font-size: 1.3rem;
         letter-spacing: 1px;
-        font-weight: 100; } }
+        font-weight: 400; } }
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 59.5%; }
   .about img {
-    top: 45;
-    width: 15%;
-    left: 43%; }
+    top: 100px;
+    width: 20%;
+    left: 41%; }
   .about .about-wrapper {
     width: 60%;
     padding: 10% 5%; }
+    .about .about-wrapper h3 {
+      margin-top: 10rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -527,12 +523,10 @@ footer {
   .menu-branding {
     height: 40vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 150px;
-      height: 150px;
-      background: url("../img/vladi-small.jpg"); }
   .about img {
-    top: 2%; }
+    top: 0;
+    width: 25%;
+    left: 40%; }
   .about .about-wrapper {
     width: 85%;
     padding: 10% 10%; }
@@ -570,7 +564,7 @@ footer {
           margin-bottom: 1.5rem;
           padding: 0.4rem;
           text-transform: uppercase;
-          font-size: 7px; }
+          font-size: 8px; }
       .works .project-container .project-description h3 {
         font-size: 2.5rem;
         letter-spacing: 1px;
@@ -584,8 +578,9 @@ footer {
         margin: 0 auto; }
       .works .project-container .project-description .btn:link, .works .project-container .project-description .btn:visited {
         padding: 1rem 1.5rem;
-        font-size: 1.3rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 400;
         margin: 2rem 0; } }
 
 @media screen and (max-width: 500px) {
@@ -594,29 +589,27 @@ footer {
   header .logo-container {
     display: flex;
     margin-left: 0.5rem;
-    padding-top: 1.3rem; }
+    padding-top: 1rem; }
     header .logo-container .logo-image img {
-      width: 6.3rem; }
+      width: 5.3rem; }
     header .logo-container .logo-description {
-      margin-top: 1.2rem;
+      margin-top: 1.3rem;
       margin-left: 0.5rem; }
-      header .logo-container .logo-description p,
-      header .logo-container .logo-description span {
-        color: #fff; }
       header .logo-container .logo-description .logo-text {
-        font-size: 2.5rem;
-        font-family: 'Indie Flower', cursive; }
+        font-size: 2rem; }
       header .logo-container .logo-description span {
-        font-size: 1.3rem;
-        font-weight: 100;
-        letter-spacing: 2px; }
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 0.33rem; }
   .about img {
-    top: 2%;
-    width: 25%;
-    left: 38%; }
+    top: -2%;
+    width: 35%;
+    left: 33%; }
   .about .about-wrapper {
     width: 100%;
     padding: 20% 2.5%; }
+    .about .about-wrapper h3 {
+      margin-top: 2rem; }
   header .hero-text-box {
     width: 90%;
     margin: 0 auto; }
@@ -625,7 +618,7 @@ footer {
     header .hero-text-box p {
       display: none; }
   header .works-box {
-    left: 43%; }
+    display: none; }
   footer .icons-grid {
     justify-content: space-around; } }
 

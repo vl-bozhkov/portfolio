@@ -16,13 +16,16 @@ $small-portrait: '../img/vladi-small.jpg';
     .about-wrapper {
       width: 60%;
       padding: 10% 5%;
+      h3 {
+        margin-top: 5rem;
+      }
     }
     img {
       position: absolute;
-      top: 0;
+      top: -15px;
       border-radius: 50%;
-      width: 10%;
-      left: 45%;
+      width: 15%;
+      left: 43%;
     }
   }
   // ======================================
@@ -48,7 +51,7 @@ $small-portrait: '../img/vladi-small.jpg';
         }
         .logo-text {
           font-size: 1.7rem;
-          font-family: 'Indie Flower', cursive;
+          // font-family: 'Indie Flower', cursive;
           // margin-bottom: 0.3rem;
         }
 
@@ -102,7 +105,7 @@ $small-portrait: '../img/vladi-small.jpg';
             margin-bottom: 0.3rem;
             padding: 0.4rem;
             text-transform: uppercase;
-            font-size: 7px;
+            font-size: 8px;
           }
         }
 
@@ -126,7 +129,7 @@ $small-portrait: '../img/vladi-small.jpg';
             padding: 1rem 1.5rem;
             font-size: 1.3rem;
             letter-spacing: 1px;
-            font-weight: 100;
+            font-weight: 400;
           }
         }
       }
@@ -149,13 +152,16 @@ $small-portrait: '../img/vladi-small.jpg';
 
   .about {
     img {
-      top: 45;
-      width: 15%;
-      left: 43%;
+      top: 100px;
+      width: 20%;
+      left: 41%;
     }
     .about-wrapper {
       width: 60%;
       padding: 10% 5%;
+      h3 {
+        margin-top: 10rem;
+      }
     }
   }
 
@@ -182,11 +188,11 @@ $small-portrait: '../img/vladi-small.jpg';
   .menu-branding {
     height: 40vh;
     transform: translate3d(100%, 0, 0);
-    .portrait {
-      width: 150px;
-      height: 150px;
-      background: url($small-portrait);
-    }
+    // .portrait {
+    //   width: 150px;
+    //   height: 150px;
+    //   background: url($small-portrait);
+    // }
   }
   // ======================================
   //===============about============
@@ -194,7 +200,9 @@ $small-portrait: '../img/vladi-small.jpg';
 
   .about {
     img {
-      top: 2%;
+      top: 0;
+      width: 25%;
+      left: 40%;
     }
     .about-wrapper {
       width: 85%;
@@ -259,7 +267,7 @@ $small-portrait: '../img/vladi-small.jpg';
             margin-bottom: 1.5rem;
             padding: 0.4rem;
             text-transform: uppercase;
-            font-size: 7px;
+            font-size: 8px;
           }
         }
 
@@ -282,9 +290,9 @@ $small-portrait: '../img/vladi-small.jpg';
           &:link,
           &:visited {
             padding: 1rem 1.5rem;
-            font-size: 1.3rem;
-
-            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: 400;
             margin: 2rem 0;
           }
         }
@@ -316,30 +324,27 @@ $small-portrait: '../img/vladi-small.jpg';
     .logo-container {
       display: flex;
       margin-left: 0.5rem;
-      padding-top: 1.3rem;
+      padding-top: 1rem;
       .logo-image {
         img {
-          width: 6.3rem;
+          width: 5.3rem;
         }
       }
 
       .logo-description {
-        margin-top: 1.2rem;
+        margin-top: 1.3rem;
         margin-left: 0.5rem;
-        p,
-        span {
-          color: #fff;
-        }
+
         .logo-text {
-          font-size: 2.5rem;
-          font-family: 'Indie Flower', cursive;
+          font-size: 2rem;
+          // font-family: 'Indie Flower', cursive;
           // margin-bottom: 0.3rem;
         }
 
         span {
-          font-size: 1.3rem;
-          font-weight: 100;
-          letter-spacing: 2px;
+          font-size: 1.1rem;
+          font-weight: 300;
+          letter-spacing: 0.33rem;
         }
       }
     }
@@ -350,13 +355,16 @@ $small-portrait: '../img/vladi-small.jpg';
 
   .about {
     img {
-      top: 2%;
-      width: 25%;
-      left: 38%;
+      top: -2%;
+      width: 35%;
+      left: 33%;
     }
     .about-wrapper {
       width: 100%;
       padding: 20% 2.5%;
+      h3 {
+        margin-top: 2rem;
+      }
     }
   }
 
@@ -376,8 +384,8 @@ $small-portrait: '../img/vladi-small.jpg';
     }
 
     .works-box {
-      // display: none;
-      left: 43%;
+      display: none;
+      // left: 43%;
     }
   }
 

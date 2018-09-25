@@ -11,6 +11,7 @@ header {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  background-attachment: fixed;
 
   .logo-container {
     display: flex;
@@ -18,7 +19,7 @@ header {
     padding-top: 2rem;
     .logo-image {
       img {
-        width: 6rem;
+        width: 5rem;
       }
     }
 
@@ -30,14 +31,17 @@ header {
         color: #fff;
       }
       .logo-text {
-        font-size: 2rem;
-        font-family: 'Indie Flower', cursive;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        // font-family: 'Indie Flower', cursive;
         // margin-bottom: 0.3rem;
       }
 
       span {
-        font-size: 1.2rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2.3px;
       }
     }
   }
@@ -154,7 +158,8 @@ header {
           margin-bottom: 0.3rem;
           padding: 0.4rem;
           text-transform: uppercase;
-          font-size: 8px;
+          font-size: 1rem;
+          font-weight: 700;
         }
       }
 
@@ -172,15 +177,15 @@ header {
         width: 70%;
       }
 
-      #btn {
-        &:link,
-        &:visited {
-          padding: 1rem 1.5rem;
-          font-size: 10.3rem;
-          letter-spacing: 1px;
-          font-weight: 100;
-        }
-      }
+      // #btn {
+      //   &:link,
+      //   &:visited {
+      //     padding: 1rem 1.5rem;
+      //     font-size: 1.5rem;
+      //     letter-spacing: 1px;
+      //     font-weight: 400;
+      //   }
+      // }
     }
     //End project container
   }
@@ -191,14 +196,14 @@ header {
 
 .more-projects {
   text-align: center;
-  margin: 13rem 0;
+  margin: 15rem 0;
   h2 {
     font-size: 3rem;
   }
   .more-projects-btn {
     border: 1px solid $primary-color;
     padding: 1rem 3rem;
-    border-radius: 15px;
+    border-radius: 0.5rem;
     &:hover {
       color: #fff;
       background: $primary-color;
@@ -231,9 +236,9 @@ header {
 
   img {
     position: absolute;
-    top: 0;
+    top: -20px;
     border-radius: 50%;
-    width: 10%;
+    width: 12%;
     left: 45%;
   }
 
@@ -254,6 +259,7 @@ header {
       text-align: center;
       margin-bottom: 4rem;
       color: #555;
+
       // color: #fff;
     }
 

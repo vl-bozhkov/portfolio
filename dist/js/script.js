@@ -53,7 +53,7 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 //smooth scrolling
 const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 2000
+  speed: 1500
 });
 
 var w = window,
